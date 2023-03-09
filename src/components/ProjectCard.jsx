@@ -20,6 +20,21 @@ const ProjectCard = ({project , language}) => {
       document.querySelectorAll('.hidden_2').forEach(o => {
         o.classList.add('show_2')
       })
+
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+              setDisplay(false)
+            }
+          })
+        } , {
+          threshold: 0.1
+        }
+      )
+
+      observer.observe(document.querySelector('#portfolio'))
+
     }, [display]
   )
 
@@ -41,7 +56,7 @@ const ProjectCard = ({project , language}) => {
     return (
       <div className='extended_details'>
         <div className='extended_images'>
-          <button className='prev_btn' onClick={prevImage}>
+          <button on className='prev_btn' onClick={prevImage}>
             <img className='btn_image' src='buttons/left-btn.png'/>
           </button>
           <img className='extended_image' src={images[n]}/>
