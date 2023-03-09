@@ -1,0 +1,267 @@
+.portfolio_container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  gap: 0.5rem;
+}
+
+.project_card {
+  height: 240px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.project_card:hover {
+  height: 430px;
+  background-color: var(--color-1);
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.project_card p {
+  font-size: 0.85rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: justify;
+
+  color: var(--lcolor-8);
+}
+
+.project_details {
+  display: flex;
+}
+
+.project_det_btn {
+  background-color: inherit;
+  color: var(--lcolor-8);
+
+  position: relative;
+  bottom: 3%;
+  z-index: -1;
+
+  height: 2rem;
+  width: 7rem;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.project_det_btn:hover {
+  background-color: var(--color-6);
+  color: var(--lcolor-1);
+  transition: all 0.5s ease;
+  border-radius: 1rem;
+}
+
+.display_show {
+  display: flex;
+}
+
+.project_img_container {
+  
+  height: fit-content;
+  width: 100%;
+  cursor: pointer;
+  border: 5px solid transparent;
+  border-radius: 1vw;
+  /* overflow: hidden; */
+  transition: all 0.5s ease;
+}
+
+.project_img_container:hover {
+  border: 5px solid var(--color-9);
+  transition: all 0.5s ease;
+}
+
+.project_image {
+  display: block;
+  height: 230px;
+  width: 100%;
+  border-radius: 1vh;
+}
+
+.extended_details {
+  height: 85vh;
+  width: 120%;
+  position: relative;
+  justify-self: center;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: repeat(2 , fit-content);
+
+  background-color: var(--color-1);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.extended_images {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: relative;
+}
+
+.extended_image {
+  width: 90%;
+
+  border-radius: 1rem;
+}
+
+.project_close_btn {
+  height: 1.5rem;
+  width: 1.5rem;
+
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+
+.prev_btn {
+  position: absolute;
+  left: 6%;
+
+  height: 3rem;
+  width: 3rem;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.prev_btn:hover {
+  box-shadow: var(--color-8) 0 0 0.5rem 0.25rem;
+  transition: all 0.5s ease;
+}
+
+.btn_image {
+  height: 100%;
+  width: 100%;
+}
+
+.next_btn {
+  position: absolute;
+  right: 6%;
+
+  height: 3rem;
+  width: 3rem;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.next_btn:hover {
+  box-shadow: var(--color-8) 0 0 0.5rem 0.25rem;
+  transition: all 0.5s ease;
+}
+
+.links_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.link_logo {
+  width: 7rem;
+
+  border-radius: 50%;
+  
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.link_logo:hover {
+  box-shadow: var(--color-8) 0 0 0.5rem 0.25rem;
+  transition: all 0.5s ease;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  width: 100%;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.description p {
+  color: var(--lcolor-8);
+}
+
+.specifications {
+  width: 100%;
+
+  padding-right: 15%;
+  padding-left: 10%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.spec_container {
+  display: grid;
+  grid-template-columns: repeat(2 , 50%);
+
+  width: 100%;
+  padding: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  background-color: var(--color-2);
+  border-radius: 0.5rem;
+}
+
+.spec_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+  justify-content: left;
+}
+
+.spec_container h4 {
+  font-weight: 500;
+}
+
+.spec_container li {
+  color: var(--lcolor-8);
+}
+
+.spec_container p {
+  color: var(--lcolor-8);
+}
+
+.project_close_btn {
+  cursor: pointer;
+}
+
+#portfolio {
+  min-height: 100vh;
+}

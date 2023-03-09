@@ -1,0 +1,158 @@
+[
+    {
+        "title" : "Presentation" ,
+        "content" : [
+            "I'm" , "Full-stack web developer"
+        ]
+    } , 
+
+    {
+        "title" : "About Me" ,
+        "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad voluptatibus eligendi quae magni! Nemo eum, voluptatem illum ipsam libero consectetur reprehenderit facere modi, eligendi cumque dicta atque vel. Totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad voluptatibus eligendi quae magni! Nemo eum, voluptatem illum ipsam libero consectetur reprehenderit facere modi, eligendi cumque dicta atque vel. Totam."
+    } ,
+
+    {
+        "title" : "Education" ,
+        "content" : {
+            "uba" : [
+                "Universidad de Buenos Aires" , "Philosophy" , "2019-today" , "logos/BALogo.png"
+            ] ,
+            "academlo" : [
+                "Academlo" , "Full-stack web developer" , "2022-2023" , "logos/logo_academlo2.png"
+            ]
+        },
+        "certificates": [
+            {
+                "id": "one",
+                "title": "Web Development foundations",
+                "image": "certificates/fundamentos.png",
+                "QR": "certificates/Fundamentos_QR.png",
+                "link": "https://certificates.academlo.com/en/verify/48494922376584"
+            },
+            {
+                "id": "two",
+                "title": "Web-Apps Development with React",
+                "image": "certificates/react.png",
+                "QR": "certificates/React_QR.png",
+                "link": "https://certificates.academlo.com/en/verify/16104120139174"
+            },
+            {
+                "id": "three",
+                "title": "Back-end Development with Node.js",
+                "image": "certificates/node.png",
+                "QR": "certificates/Node_QR.png",
+                "link": "https://certificates.academlo.com/en/verify/64035975918607"
+            },
+            {
+                "id": "four",
+                "title": "Full Stack Web Development",
+                "image": "certificates/full.png",
+                "QR": "certificates/Full_QR.png",
+                "link": "https://certificates.academlo.com/en/verify/25867238250436"
+            }
+        ]
+    } ,
+
+    {
+        "title" : "Skill Set" ,
+        "content" : {
+            "web" : {
+                "title" : "Web Development" ,
+                "all": {
+                    "html": [] ,
+                    "css": ["Web design" , "Responsive design" , "CSS animations" , "Front-end developement"] ,
+                    "javaScript": ["javaScript", "Object Oriented JavaScript" , "JavaScript frameworks"],
+                    "react": ["Class components" , "useState & useEffect" , "Hooks" , "Api use (Axios)" , "React-Hook-Form" , "React-Router-Dom" , "React-Redux" , "Protected Routes"],
+                    "node": ["Express" , "MVC arquitecture" , "postgreSQL" , "Sequelize (ORM)" , "database design" , "API rest" , "JWT validation" , "Swagger docs" , "Nodemailer" , "CORS" , "Authentication & Authorization" , "Back-end developement"]
+                }
+            } , 
+            "lang" : {
+                "title" : "Languages" ,
+                "content" : {
+                    "spanish" : [
+                        "Spanish" , "Native"
+                    ] ,
+                    "english" : [
+                        "English" , "Advanced"
+                    ]
+                }
+            }
+        }
+    } ,
+
+    {
+        "title" : "Portfolio" ,
+        "content" : {
+            "projects": [
+                {
+                    "description": "E-commerce front-end excercise developed with react, focused on external api comsumption, chart functionalities, users management and visualization of selected products. Unfortunately the api used is currently off-line, however, react project repository can be checked at gitHub.",
+                    "name": "entregable 6" ,
+                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
+                    "images": [ "img/entregable6.png" , "img/entregable6(2).png" , "img/entregable6(3).png" , "img/entregable6(4).png" , "img/entregable6(5).png" ] ,
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/reactEntregable6" ,
+                        "netlify": "https://entregable6-mems.netlify.app/"
+        }
+                } ,
+                {
+                    "description": "Front-end excercise developed with react, focused on css responsive design, class components design, conditional component rendering, search and filter functionalities, protected routes and external api comsuption.",
+                    "name": "entregable 5" ,
+                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
+                    "images": [ "img/entregable5-prov.png" , "img/entregable5(2).png" , "img/entregable5(3).png" , "img/entregable5(4).png" ] ,
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/reactEntregable5" ,
+                        "netlify": "https://entregable5-mems.netlify.app/"
+        }
+                },
+                {
+                    "description": "Front-end excercise developed with react, focused on class components design, conditional component rendering, search and filter functionalities and external api comsuption.",
+                    "name": "entregable 3" ,
+                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "compatibility": [ "desktop PC" , "laptop" ] ,
+                    "images": [ "img/entregable3-prov.png" , "img/entregable3(2).png" ] ,
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/reactEntregable3" ,
+                        "netlify": "https://entregable3-mems.netlify.app/"
+        }
+                },
+                {
+                    "description": "Front-end excercise developed focused on external api consumption, css responsive design and css conditional design.",
+                    "name": "entregable 2" ,
+                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "compatibility": [ "desktop PC" , "laptop" ] ,
+                    "images": [ "img/entregable2.png" ] ,
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/reactEntregable2" ,
+                        "netlify": "https://entregable2-mems.netlify.app/"
+        }
+                }
+            ],
+            "button": "More details"
+        }
+    } ,
+
+    {
+        "title" : "Contact" ,
+        "content" : {
+            "name": {
+                "title": "Name" ,
+                "placeholder": "What's your name?"
+            } ,
+            "email": {
+                "title": "email" ,
+                "placeholder": "Write your e-mail"
+            } ,
+            "message": {
+                "title": "Message" ,
+                "placeholder": "Tell me, how can i help you?"
+            } ,
+            "submit": "Submit"
+        }
+    } ,
+
+    {
+        "title": "Home"
+    }
+]

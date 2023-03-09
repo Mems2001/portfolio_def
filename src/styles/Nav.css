@@ -1,0 +1,76 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: var(--color-2);
+  opacity: 95%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  height: 7vh;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, -0, -0, -0.15);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navBar_list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang_btn {
+  border: none;
+  display: block;
+  width: fit-content;
+  height: 5.5vh;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-top: 0.75vh;
+  margin-bottom: 0.75vh;
+
+  background-color: var(--color-2);
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+
+.lang_btn:hover {
+  border-radius: 1.5rem;
+
+  background-color: var(--color-1);
+  color: var(--lcolor-5);
+
+  transition: all 0.5s ease;
+}
+
+.navBar_btn {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-top: 0.75vh;
+  margin-bottom: 0.75vh;
+  display: block;
+  height: 5.5vh;
+  width: fit-content;
+  text-align: center;
+  line-height: 5.5vh;
+  background-color: var(--color-2);
+  transition: all 0.5s ease;
+}
+
+.navBar_btn:hover {
+  background-color: var(--color-1);
+  border-radius: 1.5rem;
+  color: var(--lcolor-5);
+  transition: all 0.5s ease;
+}
+
+.linked {
+  background-color: var(--color-1);
+  border-radius: 1.5rem;
+  color: var(--lcolor-5);
+  transition: all 0.5s ease;
+}

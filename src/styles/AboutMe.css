@@ -1,0 +1,16 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  gap: 1.5vh;
+}
+
+.aboutMe p {
+  color: var(--lcolor-5);
+}
+
+#aboutMe {
+  height: 20vh;
+}
