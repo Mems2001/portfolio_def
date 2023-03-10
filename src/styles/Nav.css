@@ -74,3 +74,22 @@
   color: var(--lcolor-5);
   transition: all 0.5s ease;
 }
+
+/* MOBILE */
+
+.navBar_mobile {
+  height: 100vh;
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  background-color: var(--color-2);
+  box-shadow: var(--color-1) 0 0 0.5rem 0.5rem;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
