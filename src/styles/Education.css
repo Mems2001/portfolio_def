@@ -131,3 +131,37 @@
 #education {
   min-height: 100vh;
 }
+
+@media screen and (max-width:412px) {
+  .education_container {
+    flex-direction: column;
+    gap: 7vh;
+
+    margin-top: 5vh;
+  }
+
+  .ed_card {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .ed_card:hover {
+    height: 430px;
+  }
+
+  .ed_img_container {
+    height: 70vw;
+  }
+
+  .education_logo {
+    height: 70%;
+  }
+
+  /* CERTIFICATES */
+  .certificates_container {
+    display: flex;
+    flex-direction: column;
+
+    width: 70vw;
+  }
+}

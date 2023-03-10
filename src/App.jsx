@@ -10,17 +10,18 @@ import Education from './components/Education'
 import SkillSet from './components/SkillSet'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import NavBarMobile from './components/NavBarMobile'
 
 function App() {
   
   const [language, setLanguage] = useState(english)
 
-  const changeLang = () => {
-    if (language === spanish) {
-      setLanguage(english)
-    } else if (language === english) {
-      setLanguage(spanish)
-    }
+  const changeLangEsp = () => {  
+     setLanguage(spanish)
+  }
+
+  const changeLangEng = () => {
+    setLanguage(english)
   }
 
 // ANIMATIONS
@@ -70,25 +71,35 @@ function App() {
 
       const spn_btn = document.querySelector('#spn_btn')
       const eng_btn = document.querySelector('#eng_btn')
+      const spn_btn_2 = document.querySelector('#spn_btn_2')
+      const eng_btn_2 = document.querySelector('#eng_btn_2')
 
       if (language === spanish) {
         spn_btn.classList.add('linked')
+        spn_btn_2.classList.add('linked')
         // console.log('español')
       } else {
         spn_btn.classList.remove('linked')
+        spn_btn_2.classList.remove('linked')
       }
 
       if (language === english) {
         eng_btn.classList.add('linked')
+        eng_btn_2.classList.add('linked')
         // console.log('english')
       } else {
         eng_btn.classList.remove('linked')
+        eng_btn_2.classList.remove('linked')
       }
     } , [language]
   )
   return (
     <div className="App">
-     <NavBar changeLang={changeLang} language={language}/>
+     <NavBar changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language}/>
+     <NavBarMobile changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language}/>
+     <button className='navBar_btn_mobile'>
+          <img />
+     </button>
 
      <main className='main_container'>
      <Presentation language={language}/>

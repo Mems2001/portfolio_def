@@ -81,9 +81,11 @@
   height: 100vh;
   width: 50vw;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--color-2);
   box-shadow: var(--color-1) 0 0 0.5rem 0.5rem;
@@ -92,4 +94,62 @@
   z-index: 1;
   top: 0;
   left: 0;
+
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.show_nav {
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.navBar_list_lang {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navBar_list_mobile {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navBar_btn_mobile {
+  display: none;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+
+  width: 2rem;
+  height: 2rem;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width:412px) {
+  .navBar_mobile {
+    display: flex;
+  }
+
+  .navBar_btn_mobile {
+    display: block;
+  }
+
+  .navBar {
+    display: none;
+  }
 }
