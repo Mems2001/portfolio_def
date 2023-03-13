@@ -132,7 +132,7 @@
   min-height: 100vh;
 }
 
-@media screen and (max-width:412px) {
+@media screen and (max-width:500px) {
   .education_container {
     flex-direction: column;
     gap: 7vh;
@@ -146,7 +146,7 @@
   }
 
   .ed_card:hover {
-    height: 430px;
+    height: 500px;
   }
 
   .ed_img_container {
@@ -163,5 +163,13 @@
     flex-direction: column;
 
     width: 70vw;
+  }
+
+  .certificate_card {
+    height: 277px;
+  }
+
+  .certificate_card:hover {
+    height: 515px;
   }
 }

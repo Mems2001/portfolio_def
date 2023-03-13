@@ -136,3 +136,35 @@
 #skillSet {
   min-height: 100vh;
 }
+
+@media screen and (max-width:500px) {
+  .skills_container_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 5vh;
+    gap: 3vh;
+  }
+  
+  .logo_container {
+    border-top-left-radius: 12rem;
+    border-top-right-radius: 12rem;
+    
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .logo_container:hover {
+    height: 600px;
+  }
+
+  .logo_container_2 {
+    width: 60vw;
+    height: 60vw;
+  }
+  
+  .logo_image {
+    height: 70%;
+  }
+}

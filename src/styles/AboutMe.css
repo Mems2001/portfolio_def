@@ -15,7 +15,7 @@
   height: 20vh;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 500px) {
   #aboutMe {
     height: 40vh;
   }
