@@ -1,9 +1,0 @@
-#presentation {
-  height: 70vh;
-}
-
-@media screen and (max-width: 500px) {
-  #presentation {
-    height: 60vh;
-  }
-}

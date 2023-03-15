@@ -1,8 +1,41 @@
+.presentation {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 7vh;
+}
+
+.photo_container {
+  height: 60vh;
+  width: fit-content;
+  border-radius: 8rem;
+
+  overflow: hidden;
+}
+
+.personal_photo {
+  height: 100%;
+  width: 282px;
+
+  cursor: pointer;
+  background-image: url("../../public/photos/foto_1.jpeg");
+  background-size: cover;
+
+  transition: background-image 0.5s ease;
+}
+
+.personal_photo:hover {
+  background-image: url("../../public/photos/foto_2.jpeg");
+
+  transition: background-image 0.5s ease;
+}
+
 .aboutMe {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: justify;
   gap: 1.5vh;
 }
@@ -12,11 +45,16 @@
 }
 
 #aboutMe {
-  height: 20vh;
+  height: 100vh;
+}
+
+#fewWords {
+  height: 30vh;
 }
 
 @media screen and (max-width: 500px) {
-  #aboutMe {
+
+  #fewWords {
     height: 40vh;
   }
 }

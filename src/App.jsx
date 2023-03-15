@@ -4,7 +4,6 @@ import spanish from './json/spanish.json'
 import english from './json/english.json'
 
 import NavBar from './components/NavBar'
-import Presentation from './components/Presentation'
 import AboutMe from './components/AboutMe'
 import Education from './components/Education'
 import SkillSet from './components/SkillSet'
@@ -102,8 +101,6 @@ function App() {
      </button>
 
      <main className='main_container'>
-     <Presentation language={language}/>
-
      <AboutMe language={language}/>
 
      <Education language={language}/>

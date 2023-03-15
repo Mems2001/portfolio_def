@@ -30,7 +30,7 @@ const NavBarMobile = ({language , changeLangEsp , changeLangEng}) => {
         </ul>
   
         <ul className='navBar_list_mobile'>
-          <li><a className='cl1 navBar_btn link' href="#presentation">{language[1].title}</a></li>
+          <li><a className='cl1 navBar_btn link' href="#aboutMe">{language[1].title}</a></li>
           <li><a className='cl1 navBar_btn link' href="#education">{language[2].title}</a></li>
           <li><a className='cl1 navBar_btn link' href="#skillSet">{language[3].title}</a></li>
           <li><a className='cl1 navBar_btn link' href="#portfolio">{language[4].title}</a></li>
