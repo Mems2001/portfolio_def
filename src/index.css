@@ -205,3 +205,14 @@ section:not(#aboutMe) {
 section:not(#aboutMe , #contact) {
   padding-bottom: 30vh;
 }
+
+@media screen and (max-width:500px) {
+  
+  section:not(#aboutMe) {
+    padding-top: 10vh ;
+  }
+  
+  section:not(#aboutMe , #contact) {
+    padding-bottom: 20vh;
+  }
+}
