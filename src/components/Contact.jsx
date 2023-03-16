@@ -17,7 +17,7 @@ const Contact = ({language}) => {
         message_contact: ''
       }
 
-      const mail = 'f609a4528a2cb85f2aff02129596cb96'
+      const mail = 'mems2001code@gmail.com'
       const URL = `https://formsubmit.co/${mail}`
 
       window.fetch(URL , {
@@ -29,7 +29,7 @@ const Contact = ({language}) => {
         body: JSON.stringify(data)
       })
         .then(data => {
-          // console.log(data , data.body)
+          console.log(data)
           reset(defaultForm)
         })
         .catch(err => console.log(err))
