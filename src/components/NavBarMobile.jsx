@@ -2,25 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 const NavBarMobile = ({language , changeLangEsp , changeLangEng}) => {
 
-  const [showBar, setShowBar] = useState(false)
-  
-  useEffect(
-    () => {
-      const navBar = document.querySelector('.navBar_mobile')
-      const navBtn = document.querySelector('.navBar_btn_mobile')
-
-      navBtn.addEventListener("click" , () => {
-
-        if (showBar) {
-          setShowBar(false)
-          navBar.classList.remove("show_nav")
-        } else {
-          setShowBar(true)
-          navBar.classList.add('show_nav')
-        }
-      })
-    } , [showBar]
-  )
 
   return (
     <nav className='navBar_mobile'>

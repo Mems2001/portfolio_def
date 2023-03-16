@@ -32,6 +32,7 @@
   margin-top: 0.75vh;
   margin-bottom: 0.75vh;
 
+  color: var(--lcolor-1);
   background-color: var(--color-2);
   cursor: pointer;
 
@@ -52,11 +53,14 @@
   padding-right: 0.75rem;
   margin-top: 0.75vh;
   margin-bottom: 0.75vh;
-  display: block;
   height: 5.5vh;
+
+  display: block;
   width: fit-content;
   text-align: center;
   line-height: 5.5vh;
+
+  color: var(--lcolor-1);
   background-color: var(--color-2);
   transition: all 0.5s ease;
 }
@@ -134,8 +138,12 @@
   right: 0;
   z-index: 1;
 
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
+
+  background-color: transparent;
+  border: none;
+  border-bottom-left-radius: 50%;
 
   cursor: pointer;
 }

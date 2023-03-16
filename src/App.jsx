@@ -92,12 +92,78 @@ function App() {
       }
     } , [language]
   )
+
+// NAVIGATOR MOBILE INTERACTIONS
+const [showBar, setShowBar] = useState(false)
+  
+useEffect(
+  () => {
+    const navBar = document.querySelector('.navBar_mobile')
+    const navBtn = document.querySelector('.navBar_btn_mobile')
+
+    navBtn.addEventListener("click" , () => {
+
+      if (showBar) {
+        setShowBar(false)
+        navBar.classList.remove("show_nav")
+      } else {
+        setShowBar(true)
+        navBar.classList.add('show_nav')
+      }
+    })
+  } , [showBar]
+)
+
+// LIGHT/DARK THEMES
+const [theme, setTheme] = useState('Dark')
+
+const toggleTheme = () => {
+  if (theme === 'Dark') {
+    setTheme('Light')
+  } else {
+    setTheme('Dark')
+  }
+}
+
+useEffect(
+  () => {
+    const themeBtn = document.querySelector('.theme_btn')
+    const theme_img = document.querySelector('.theme_img')
+    
+    themeBtn.addEventListener('click' , () => {
+      if (theme === 'Light') {
+        document.body.classList.remove('light_theme')
+        theme_img.classList.remove('light')
+        toggleTheme()
+      } else {
+        document.body.classList.add('light_theme')
+        theme_img.classList.add('light')
+        toggleTheme()
+      }
+    })
+  } , [theme]
+)
+
   return (
     <div className="App">
      <NavBar changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language}/>
      <NavBarMobile changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language}/>
      <button className='navBar_btn_mobile'>
-          <img />
+      {
+        showBar?
+        <box-icon type='solid' size='lg' name='x-circle' color={theme==='Dark'?'#ea9595':'#457b9d'} ></box-icon> :
+        <box-icon name='menu' size='lg' color={theme==='Dark'?'#ea9595':'#457b9d'} ></box-icon>
+      }
+     </button>
+
+     <button className='theme_btn'>
+      <div className='theme_backgrounds'>
+        <box-icon type='solid' name='moon'></box-icon>
+      </div>
+      <div className='theme_backgrounds'>
+        <box-icon type='solid' name='sun' color='#457b9d'></box-icon>
+      </div>
+      <div className='theme_img'></div>
      </button>
 
      <main className='main_container'>
@@ -107,7 +173,7 @@ function App() {
 
      <SkillSet language={language}/>
 
-     <Portfolio language={language}/>
+     <Portfolio theme={theme} language={language}/>
 
      <Contact language={language}/>
      </main>

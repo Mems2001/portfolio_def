@@ -38,90 +38,6 @@
   --lcolor-10: #6a1518;
 }
 
-/* Colores de letras */
-
-.cl1 {
-  color: var(--lcolor-1);
-}
-
-.cl2 {
-  color: var(--lcolor-2);
-}
-
-.cl3 {
-  color: var(--lcolor-3);
-}
-
-.cl4 {
-  color: var(--lcolor-4);
-}
-
-.cl5 {
-  color: var(--lcolor-5);
-}
-
-.cl6 {
-  color: var(--lcolor-6);
-}
-
-.cl7 {
-  color: var(--lcolor-7);
-}
-
-.cl8 {
-  color: var(--lcolor-8);
-}
-
-.cl9 {
-  color: var(--lcolor-9);
-}
-
-.cl10 {
-  color: var(--lcolor-10);
-}
-
-/* Colores de fondo */
-
-.cb1 {
-  background-color: var(--color-1);
-}
-
-.cb2 {
-  background-color: var(--color-2);
-}
-
-.cb3 {
-  background-color: var(--color-3);
-}
-
-.cb4 {
-  background-color: var(--color-4);
-}
-
-.cb5 {
-  background-color: var(--color-5);
-}
-
-.cb6 {
-  background-color: var(--color-6);
-}
-
-.cb7 {
-  background-color: var(--color-7);
-}
-
-.cb8 {
-  background-color: var(--color-8);
-}
-
-.cb9 {
-  background-color: var(--color-9);
-}
-
-.cb10 {
-  background-color: var(--color-10);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -134,6 +50,21 @@
 
 body {
   background-color: var(--color-2);
+  transition: all 0.5s ease;
+}
+
+body.light_theme {
+  --color-1: #457b9d;
+  --color-2: #cccccc;
+  --color-3: #a5a5a5;
+  --color-4: #f2f2f2;
+  --color-6: #1d3557;
+  --color-8: #a8dadc;
+  --color-9: #000000;
+
+  --lcolor-1: #457b9d ;
+  --lcolor-5: #1d3557;
+  --lcolor-8: #1d3557;
 }
 
 a {
@@ -198,6 +129,54 @@ section {
   /* padding-left: 12.5%; */
 }
 
+/* THEMES */
+.theme_btn {
+  display: flex;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--color-4);
+
+  height: 2rem;
+  width: 4rem;
+}
+
+.theme_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  /* border: 1px outset black; */
+  background-color: var(--color-1);
+  box-shadow: var(--color-8) 0px 0px 2px 4px;
+
+  transition: all 1s ease;
+}
+
+.light {
+  left: 0;
+
+  transition: all 1s ease;
+}
+
+.theme_backgrounds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 2rem;
+  width: 2rem;
+}
+
 section:not(#aboutMe) {
   padding-top: 10vh ;
 }
@@ -207,6 +186,10 @@ section:not(#aboutMe , #contact) {
 }
 
 @media screen and (max-width:500px) {
+
+  .theme_btn {
+    top: 1rem;
+  }
   
   section:not(#aboutMe) {
     padding-top: 10vh ;

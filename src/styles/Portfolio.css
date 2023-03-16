@@ -94,7 +94,7 @@
 
 .extended_details {
   height: 85vh;
-  width: 120%;
+  width: 100%;
   position: relative;
   justify-self: center;
 
@@ -135,6 +135,10 @@
 }
 
 .prev_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   left: 6%;
 
@@ -181,8 +185,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  margin-bottom: 1rem;
 }
 
 .link_logo {

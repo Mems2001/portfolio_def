@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import english from '../json/english.json'
 
-const ProjectCard = ({project , language}) => {
+const ProjectCard = ({project , language , theme}) => {
 
   const [display, setDisplay] = useState(false)
 
@@ -57,11 +57,11 @@ const ProjectCard = ({project , language}) => {
       <div className='extended_details'>
         <div className='extended_images'>
           <button on className='prev_btn' onClick={prevImage}>
-            <img className='btn_image' src='buttons/left-btn.png'/>
+            <box-icon name='caret-left' size='lg' color={theme==='Dark'?'#951d20':'#a8dadc'}></box-icon>
           </button>
           <img className='extended_image' src={images[n]}/>
           <button className='next_btn' onClick={nextImage}>
-            <img className='btn_image'src='buttons/right-btn.png'/>
+          <box-icon name='caret-right' size='lg' color={theme==='Dark'?'#951d20':'#a8dadc'}></box-icon>
           </button>
         </div>
 
@@ -96,10 +96,10 @@ const ProjectCard = ({project , language}) => {
 
         <div className='links_container'>
           <a href={project.links.gitHub} target={'_blank'}>
-            <img className='link_logo' src='logos/github-logo-144.png'/>
+            <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
           </a>
           <a href={project.links.netlify} target={'_blank'}>
-            <img className='link_logo' src='logos/netlify-logo-144.png'/>
+            <img className='link_logo' src={`logos/netlify-logo-144${theme==='Dark'?'D':'L'}.png`}/>
           </a>
         </div>
         
