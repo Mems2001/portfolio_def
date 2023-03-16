@@ -127,9 +127,9 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 body {
