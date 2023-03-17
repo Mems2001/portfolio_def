@@ -40,14 +40,15 @@ const Contact = ({language}) => {
     <section className='hidden' id='contact'>
       <h2 className='section_title'>{language[5].title}</h2>
 
-      <form className='form' onSubmit={handleSubmit(submit)} netlify>
+      <form className='form' onSubmit={handleSubmit(submit)}>
         <label htmlFor='nameC'>{language[5].content.name.title}:</label>
-        <input type='text' id='nameC' {...register('name_contact')} placeholder={language[5].content.name.placeholder}/>
+        <input type='text' name='name' id='nameC' {...register('name_contact')} placeholder={language[5].content.name.placeholder}/>
         <label htmlFor='emailC'>{language[5].content.email.title}:</label>
-        <input type='text' id='emailC' {...register('email_contact')} placeholder={language[5].content.email.placeholder}/>
+        <input type='email' name='email' id='emailC' {...register('email_contact')} placeholder={language[5].content.email.placeholder}/>
         <label htmlFor='messageC'>{language[5].content.message.title}:</label>
-        <textarea id='messageC' {...register('message_contact')} placeholder={language[5].content.message.placeholder} rows='10'/>
+        <textarea name='message' id='messageC' {...register('message_contact')} placeholder={language[5].content.message.placeholder} rows='10'/>
         <button className='form_btn'>{language[5].content.submit}</button>
+        <input type="hidden" name="form-name" value="contact" />
       </form>
     </section>
   )
