@@ -40,7 +40,7 @@ const Contact = ({language}) => {
     <section className='hidden' id='contact'>
       <h2 className='section_title'>{language[5].title}</h2>
 
-      <form name='contactC' className='form' onSubmit={handleSubmit(submit)}>
+      <form name='contactC' className='form' onSubmit={handleSubmit(submit)} method='post'>
         <label htmlFor='nameC'>{language[5].content.name.title}:</label>
         <input type='text' name='nameC' id='nameC' {...register('name_contact')} placeholder={language[5].content.name.placeholder}/>
         <label htmlFor='emailC'>{language[5].content.email.title}:</label>
