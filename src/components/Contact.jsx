@@ -20,11 +20,11 @@ const Contact = ({language}) => {
       const mail = 'mems2001code@gmail.com'
       const URL = `https://formsubmit.co/${mail}`
 
-      window.fetch(URL , {
+      window.fetch('/' , {
         method: 'POST',
         headers: {
-          'Content-Type': ['application/json','application/x-www-form-urlencoded'],
-          'Accept': ['application/json','application/x-www-form-urlencoded']
+          'Content-Type': 'application/x-www-form-urlencoded'
+          // 'Accept': ['application/json','application/x-www-form-urlencoded']
         },
         body: JSON.stringify({"form-name":"contactC" , ...data})
       })
