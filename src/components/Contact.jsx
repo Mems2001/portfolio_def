@@ -40,7 +40,7 @@ const Contact = ({language}) => {
     <section className='hidden' id='contact'>
       <h2 className='section_title'>{language[5].title}</h2>
 
-      <form className='form' onSubmit={handleSubmit(submit)} data-netlify='true'>
+      <form className='form' onSubmit={handleSubmit(submit)} netlify>
         <label htmlFor='nameC'>{language[5].content.name.title}:</label>
         <input type='text' id='nameC' {...register('name_contact')} placeholder={language[5].content.name.placeholder}/>
         <label htmlFor='emailC'>{language[5].content.email.title}:</label>
