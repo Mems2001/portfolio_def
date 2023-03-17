@@ -7,11 +7,12 @@ const Contact = ({language}) => {
 
   const {register , handleSubmit , reset} = useForm()
 
-  const encode = (info) => {
-    return Object.keys(info)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(info[key]))
-        .join("&");
-  }
+  // const encode = (info) => {
+  //   console.log(info)
+  //   return Object.keys(info)
+  //       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(info[key]))
+  //       .join("&");
+  // }
 
   const submit = data => {
     if(data.email_contact != '') {
@@ -33,7 +34,7 @@ const Contact = ({language}) => {
           'Content-Type': 'application/x-www-form-urlencoded'
           // 'Accept': ['application/json','application/x-www-form-urlencoded']
         },
-        body: encode({"form-name":"contactC" , ...data})
+        body: `form-name=contactC&name=${data.name_contact}&email=${data.email_contact}&message=${data.message_contact}`
       })
         .then(data => {
           console.log(data)
@@ -49,11 +50,11 @@ const Contact = ({language}) => {
 
       <form name='contactC' className='form' onSubmit={handleSubmit(submit)} method='post'>
         <label htmlFor='nameC'>{language[5].content.name.title}:</label>
-        <input type='text' name='nameC' id='nameC' value={nameC} {...register('name_contact')} placeholder={language[5].content.name.placeholder}/>
+        <input type='text' name='nameC' id='nameC' {...register('name_contact')} placeholder={language[5].content.name.placeholder}/>
         <label htmlFor='emailC'>{language[5].content.email.title}:</label>
-        <input type='email' name='emailC' id='emailC' value={emailC} {...register('email_contact')} placeholder={language[5].content.email.placeholder}/>
+        <input type='email' name='emailC' id='emailC' {...register('email_contact')} placeholder={language[5].content.email.placeholder}/>
         <label htmlFor='messageC'>{language[5].content.message.title}:</label>
-        <textarea name='messageC' id='messageC' value={messageC} {...register('message_contact')} placeholder={language[5].content.message.placeholder} rows='10'/>
+        <textarea name='messageC' id='messageC' {...register('message_contact')} placeholder={language[5].content.message.placeholder} rows='10'/>
         <button type='submit' className='form_btn'>{language[5].content.submit}</button>
         <input type="hidden" name="form-name" value="contact" />
       </form>
