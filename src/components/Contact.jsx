@@ -33,7 +33,7 @@ const Contact = ({language}) => {
           'Content-Type': 'application/x-www-form-urlencoded'
           // 'Accept': ['application/json','application/x-www-form-urlencoded']
         },
-        body: encode({"form-name":"contactC" , ...data})
+        body: encode({"form-name":"contactC" , ...this.data})
       })
         .then(data => {
           console.log(data)
