@@ -138,6 +138,10 @@
 }
 
 @media screen and (max-width:500px) {
+  .skills_container {
+    width: 80%;
+  }
+
   .skills_container_3 {
     display: flex;
     flex-direction: column;

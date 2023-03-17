@@ -89,33 +89,33 @@
                     "name": "entregable 6" ,
                     "languages": [ "hmtl" , "css" , "javaScript" ] ,
                     "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
-                    "images": [ "img/entregable6.png" , "img/entregable6(2).png" , "img/entregable6(3).png" , "img/entregable6(4).png" , "img/entregable6(5).png" ] ,
+                    "images": [ "img/entregable6/entregable6.png" , "img/entregable6/entregable6(2).png" , "img/entregable6/entregable6(3).png" , "img/entregable6/entregable6(4).png" , "img/entregable6/entregable6(5).png" ] ,
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable6" ,
                         "netlify": "https://entregable6-mems.netlify.app/"
-        }
+                    }
                 } ,
                 {
                     "description": "Front-end excercise developed with react, focused on css responsive design, class components design, conditional component rendering, search and filter functionalities, protected routes and external api comsuption.",
                     "name": "entregable 5" ,
                     "languages": [ "hmtl" , "css" , "javaScript" ] ,
                     "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
-                    "images": [ "img/entregable5-prov.png" , "img/entregable5(2).png" , "img/entregable5(3).png" , "img/entregable5(4).png" ] ,
+                    "images": [ "img/entregable5/entregable5-prov.png" , "img/entregable5/entregable5(2).png" , "img/entregable5/entregable5(3).png" , "img/entregable5/entregable5(4).png" ] ,
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable5" ,
                         "netlify": "https://entregable5-mems.netlify.app/"
-        }
+                    }
                 },
                 {
                     "description": "Front-end excercise developed with react, focused on class components design, conditional component rendering, search and filter functionalities and external api comsuption.",
                     "name": "entregable 3" ,
                     "languages": [ "hmtl" , "css" , "javaScript" ] ,
                     "compatibility": [ "desktop PC" , "laptop" ] ,
-                    "images": [ "img/entregable3-prov.png" , "img/entregable3(2).png" ] ,
+                    "images": [ "img/entregable3/entregable3-prov.png" , "img/entregable3/entregable3(2).png" ] ,
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable3" ,
                         "netlify": "https://entregable3-mems.netlify.app/"
-        }
+                    }
                 },
                 {
                     "description": "Front-end excercise developed focused on external api consumption, css responsive design and css conditional design.",
@@ -126,7 +126,18 @@
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable2" ,
                         "netlify": "https://entregable2-mems.netlify.app/"
-        }
+                    }
+                },
+                {
+                    "description": "This CV page itself! Front-end project developed with react with css animations, conditional css features such as language and theme toggling, responsive desing, react components arquitecture, and more!",
+                    "name": "Mems CV",
+                    "languages": ["hmtl" , "css" , "javaScript" , "jsx"],
+                    "compatibility": ["desktop PC" , "mobile"],
+                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/portfolio_def",
+                        "netlify": "https://memsportafolio.netlify.app/"
+                    }
                 }
             ],
             "button": "More details"

@@ -24,6 +24,7 @@
   border: none;
   border-radius: 0.5rem;
 
+  color: var(--lcolor-4);
   background-color: var(--color-4);
   border: 2px solid transparent;
 
@@ -61,4 +62,14 @@
 
 #contact {
   min-height: 100vh;
+}
+
+@media screen and (max-width:500px) {
+  .form {
+    width: 80%;
+    gap: 2rem;
+
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+  }
 }

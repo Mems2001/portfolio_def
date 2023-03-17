@@ -12,10 +12,9 @@ const Portfolio = ({theme , language}) => {
       <h2 className='section_title'>{language[4].title}</h2>
 
       <div className='portfolio_container'>
-        <ProjectCard project={p[0]} language={language} theme={theme} />
-        <ProjectCard project={p[1]} language={language} theme={theme} />
-        <ProjectCard project={p[2]} language={language} theme={theme} />
-        <ProjectCard project={p[3]} language={language} theme={theme} />
+        {p?.map(
+          element => <ProjectCard project={element} language={language} theme={theme} />
+        )}
       </div>
     </section>
   )
