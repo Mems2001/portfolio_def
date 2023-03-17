@@ -115,7 +115,7 @@ useEffect(
 )
 
 // LIGHT/DARK THEMES
-const [theme, setTheme] = useState('Dark')
+const [theme, setTheme] = useState('Light')
 
 const toggleTheme = () => {
   if (theme === 'Dark') {
