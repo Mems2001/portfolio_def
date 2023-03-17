@@ -23,10 +23,10 @@ const Contact = ({language}) => {
       window.fetch(URL , {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Content-Type': ['application/json','application/x-www-form-urlencoded'],
+          'Accept': ['application/json','application/x-www-form-urlencoded']
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify({"form-name":"contactC" , ...data})
       })
         .then(data => {
           console.log(data)
