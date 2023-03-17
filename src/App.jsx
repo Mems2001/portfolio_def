@@ -163,7 +163,7 @@ useEffect(
       <div className='theme_backgrounds'>
         <box-icon type='solid' name='sun' color='#457b9d'></box-icon>
       </div>
-      <div className='theme_img'></div>
+      <div className='theme_img light'></div>
      </button>
 
      <main className='main_container'>
