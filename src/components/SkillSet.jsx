@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import '../styles/Skills.css'
 
@@ -8,6 +8,39 @@ const SkillSet = ({language}) => {
   const javaScript = language[3].content.web.all.javaScript
   const react = language[3].content.web.all.react
   const node = language[3].content.web.all.node
+
+  // ANIMATIONS
+
+  useEffect (
+    () => {
+      const spanishBar = document.querySelector('.bar_comp')
+      const englishBar = document.querySelector('.bar_comp_2')
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('bar_comp')) {
+              entry.target.classList.add('spanish')
+            }
+            if (entry.target.classList.contains('bar_comp_2')) {
+              entry.target.classList.add('english')
+            }
+          } else {
+            if (entry.target.classList.contains('bar_comp')) {
+              entry.target.classList.remove('spanish')
+            }
+            if (entry.target.classList.contains('bar_comp_2')) {
+              entry.target.classList.remove('english')
+            }
+          }
+        })
+      })
+
+      observer.observe(spanishBar)
+      observer.observe(englishBar)
+
+    } , []
+  )
 
   return (
     <section className='hidden' id='skillSet'>
@@ -103,25 +136,18 @@ const SkillSet = ({language}) => {
                   <div className='language_container'>
                     <span className='lang_titles'><b>{language[3].content.lang.content.spanish[0]} :</b></span>
                     <span className='lang_titles'>{language[3].content.lang.content.spanish[1]}</span>
-                    <span className='language_bar'>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
+                    <span className='language_bar b_spanish'>
+                      <div data-progress='100' className='bar_comp'></div>
                     </span>
                   </div>
                 </li>
+                <br/>
                 <li>
                   <div className='language_container'>
                     <span className='lang_titles'><b>{language[3].content.lang.content.english[0]} :</b></span>
                     <span className='lang_titles'>{language[3].content.lang.content.english[1]}</span>
                     <span className='language_bar'>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp'></div>
-                      <div className='bar_comp_2'></div>
+                      <div data-progress='75' className='bar_comp_2'></div>
                     </span>
                   </div>
                 </li>
