@@ -34,7 +34,7 @@ const Contact = ({language}) => {
           'Content-Type': 'application/x-www-form-urlencoded'
           // 'Accept': ['application/json','application/x-www-form-urlencoded']
         },
-        body: `form-name=contactC&name=${data.name_contact}&email=${data.email_contact}&message=${data.message_contact}`
+        body: `form-name=contact&name=${data.name_contact}&email=${data.email_contact}&message=${data.message_contact}`
       })
         .then(data => {
           console.log(data)
