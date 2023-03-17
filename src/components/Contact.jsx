@@ -7,6 +7,12 @@ const Contact = ({language}) => {
 
   const {register , handleSubmit , reset} = useForm()
 
+  const encode = (info) => {
+    return Object.keys(info)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(info[key]))
+        .join("&");
+  }
+
   const submit = data => {
     if(data.email_contact != '') {
       console.log(data)
@@ -17,8 +23,9 @@ const Contact = ({language}) => {
         message_contact: ''
       }
 
-      const mail = 'mems2001code@gmail.com'
-      const URL = `https://formsubmit.co/${mail}`
+      // WITH FORM SUBMIT
+      // const mail = 'mems2001code@gmail.com'
+      // const URL = `https://formsubmit.co/${mail}`
 
       window.fetch('/' , {
         method: 'POST',
@@ -26,7 +33,7 @@ const Contact = ({language}) => {
           'Content-Type': 'application/x-www-form-urlencoded'
           // 'Accept': ['application/json','application/x-www-form-urlencoded']
         },
-        body: JSON.stringify({"form-name":"contactC" , ...data})
+        body: encode({"form-name":"contactC" , ...data})
       })
         .then(data => {
           console.log(data)
