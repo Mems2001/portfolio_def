@@ -115,7 +115,7 @@ useEffect(
 )
 
 // LIGHT/DARK THEMES
-const [theme, setTheme] = useState('Dark')
+const [theme, setTheme] = useState('Light')
 
 const toggleTheme = () => {
   if (theme === 'Dark') {
@@ -163,7 +163,7 @@ useEffect(
       <div className='theme_backgrounds'>
         <box-icon type='solid' name='sun' color='#457b9d'></box-icon>
       </div>
-      <div className='theme_img'></div>
+      <div className='theme_img light'></div>
      </button>
 
      <main className='main_container'>
