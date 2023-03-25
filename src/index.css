@@ -38,6 +38,12 @@
   --lcolor-10: #6a1518;
 }
 
+/* Screen */
+
+:root {
+  --sm-sc: 640px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -187,7 +193,7 @@ section:not(#aboutMe , #contact) {
   padding-bottom: 30vh;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 768px) {
 
   .theme_btn {
     top: 1rem;

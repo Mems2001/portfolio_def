@@ -59,26 +59,28 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
 
   .presentation {
-    height: 62vh;
+    height: 60vh;
     padding-top: 2vh;
+    padding-bottom: 2vh;
   }
 
   .photo_container {
     height: 90%;
-    width: 82vw;
+    width: 80vw;
   }
 
   .personal_photo {
-    background-size: cover;
+    background-size: contain;
     width: 85vw;
   }
 
   .aboutMe {
-    height: 38vh;
+    height: 40vh;
     justify-content: space-evenly;
+
 
     padding: 0;
     padding-bottom: 10vh;
@@ -87,7 +89,7 @@
   }
 
   .aboutMe p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .aboutMe_container {
