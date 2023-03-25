@@ -73,7 +73,7 @@
   }
 
   .personal_photo {
-    background-size: contain;
+    background-size: cover;
     width: 85vw;
   }
 
