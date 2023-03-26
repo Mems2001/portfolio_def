@@ -165,8 +165,8 @@ section {
   border-radius: 50%;
   /* border: 1px outset black; */
   background-color: var(--color-1);
+  
   box-shadow: var(--color-8) 0px 0px 2px 4px;
-
   transition: all 1s ease;
 }
 

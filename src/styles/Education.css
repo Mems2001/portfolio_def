@@ -48,6 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 1rem;
 
   padding-top: 5%;
@@ -179,17 +180,42 @@
   min-height: 100vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .ed_card {
+    height: 20vw;
+    width: 20vw;
+    font-size: 0.75rem;
+  }
+
+  .education_title {
+    font-size: 0.75rem;
+  }
+
+  .ed_card:hover {
+    height: 320px;
+  }
+
+  .ed_img_container {
+    height: 20vw;
+  }
+}
+
 @media screen and (max-width:768px) {
   .education_container {
     flex-direction: column;
     gap: 7vh;
-
+    
     margin-top: 5vh;
   }
-
+  
   .ed_card {
     width: 70vw;
     height: 70vw;
+    font-size: 1rem;
+  }
+
+  .education_title {
+    font-size: 1rem;
   }
 
   .ed_card:hover {
@@ -208,15 +234,15 @@
   .certificates_container {
     display: flex;
     flex-direction: column;
-
+    
     width: 70vw;
   }
-
+  
   .c {
     width: 65vw;
     height: 220px;
   }
-
+  
   .c:hover {
     height: 44vh;
   }
