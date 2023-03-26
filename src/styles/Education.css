@@ -86,50 +86,54 @@
 }
 
 .c {
+  align-self: center;
+
   position: relative;
+  width: 100%;
   height: 210px;
+  /* height: 33vh; */
 
   transition: all 0.25s ease;
 }
 
 .c:hover {
-  height: 417px;
+  height: 415px;
 }
 
 .c_one {
-  background-image: url('../../public/certificates/fundamentos.png');
+  background-image: url('/certificates/fundamentos.png');
   background-size: cover;
 }
 
 .c_one:hover {
-  background-image: url('../../public/certificates/Fundamentos_QR.png');
+  background-image: url('/certificates/Fundamentos_QR.png');
 }
 
 .c_two {
-  background-image: url('../../public/certificates/react.png');
+  background-image: url('/certificates/react.png');
   background-size: cover;
 }
 
 .c_two:hover {
-  background-image: url('../../public/certificates/React_QR.png');
+  background-image: url('/certificates/React_QR.png');
 }
 
 .c_three {
-  background-image: url('../../public/certificates/node.png');
+  background-image: url('/certificates/node.png');
   background-size: cover;
 }
 
 .c_three:hover {
-  background-image: url('../../public/certificates/Node_QR.png');
+  background-image: url('/certificates/Node_QR.png');
 }
 
 .c_four {
-  background-image: url('../../public/certificates/fundamentos.png');
+  background-image: url('/certificates/fundamentos.png');
   background-size: cover;
 }
 
 .c_four:hover {
-  background-image: url('../../public/certificates/Fundamentos_QR.png');
+  background-image: url('/certificates/Fundamentos_QR.png');
 }
 
 .certificate_main_title {
@@ -208,6 +212,11 @@
   }
 
   .c {
-    height: 240px;
+    width: 65vw;
+    height: 220px;
+  }
+
+  .c:hover {
+    height: 44vh;
   }
 }

@@ -98,9 +98,11 @@ const ProjectCard = ({project , language , theme}) => {
           <a href={project.links.gitHub} target={'_blank'}>
             <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
           </a>
+          {project.links.netlify ? 
           <a href={project.links.netlify} target={'_blank'}>
             <img className='link_logo' src={`logos/netlify-logo-144${theme==='Dark'?'D':'L'}.png`}/>
-          </a>
+          </a> : ''
+          }
         </div>
         
         <button onClick={showDetails} className='project_close_btn'></button>
@@ -110,11 +112,11 @@ const ProjectCard = ({project , language , theme}) => {
     return (
       <div className='hidden_2 project_card'>
         <div className='project_img_container'>
-          <img className='project_image' src={project.images[0]}/>
+          <img className='project_image' src={project?.images[0]}/>
         </div> 
   
         <div className='project_details'>
-            <p>{project.description}</p>
+            <p>{project?.description}</p>
         </div> 
   
         <button className='project_det_btn' onClick={showDetails}>{language[4].content.button}</button>

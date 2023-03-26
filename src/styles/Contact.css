@@ -67,7 +67,7 @@
   min-height: 100vh;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
   .form {
     width: 80%;
     gap: 2rem;

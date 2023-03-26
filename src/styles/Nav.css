@@ -148,7 +148,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
   .navBar_mobile {
     display: flex;
   }

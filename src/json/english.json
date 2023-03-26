@@ -138,6 +138,16 @@
                         "gitHub": "https://github.com/Mems2001/portfolio_def",
                         "netlify": "https://memsportafolio.netlify.app/"
                     }
+                },
+                {
+                    "description": "The main function of the api as an algorithm is to produce random sudoku puzzles, however, it has a simple react web app for data visualization of the puzzle and further functions just like any sudoku game! (Unfortunately this app isn't currently online, but you can check the repository!)",
+                    "name": "Sudoku app (on developement)",
+                    "languages": ["html" , "css" , "javaScript" , "jsx"],
+                    "compatibility": ["desktop PC"],
+                    "images": [],
+                    "links": {
+                        "gitHub": ""
+                    }
                 }
             ],
             "button": "More details"

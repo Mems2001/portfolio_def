@@ -138,6 +138,16 @@
                         "gitHub": "https://github.com/Mems2001/portfolio_def",
                         "netlify": "https://memsportafolio.netlify.app/"
                     }
+                },
+                {
+                    "description": "La función principal de la api como algoritmo es producir sudokus aleatorios, además, tiene una app simple con React para visualización de datos e implementación futura de funciones como las de cualquier juego Sudoku! (Desafortunadamente la app no está online, pero se puede revisar el repositorio!)",
+                    "name": "Sudoku app (en desarrollo)",
+                    "languages": ["html" , "css" , "javaScript" , "jsx"],
+                    "compatibility": ["desktop PC"],
+                    "images": [],
+                    "links": {
+                        "gitHub": ""
+                    }
                 }
             ],
             "button": "Ver detalles"
