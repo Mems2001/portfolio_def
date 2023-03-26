@@ -63,7 +63,7 @@ function App() {
             entry.target.classList.remove('show_2')
           }
         })
-      } , {})
+      })
       
       hiddenElements.forEach(element => observer.observe(element))
       hiddenProjectCards.forEach(element => observer1.observe(element))
