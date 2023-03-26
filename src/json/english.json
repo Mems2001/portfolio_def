@@ -85,7 +85,7 @@
                     },
                     {   "name": "svelte",
                         "skills": [],
-                        "image": ""
+                        "image": "logos/svelte-logo.png"
                     },
                     {   "name": "tailwindCSS",
                         "skills": [],
@@ -167,13 +167,13 @@
                     }
                 },
                 {
-                    "description": "The main function of the api as an algorithm is to produce random sudoku puzzles, however, it has a simple react web app for data visualization of the puzzle and further functions just like any sudoku game! (Unfortunately this app isn't currently online, but you can check the repository!)",
+                    "description": "The main function of the api as an algorithm is to produce random sudoku puzzles, however, it has a simple react web app for data visualization of the puzzle expecting further functions just like any sudoku game! (Unfortunately this api isn't currently online, but you can check the repository!)",
                     "name": "Sudoku app (on developement)",
                     "languages": ["html" , "css" , "javaScript" , "jsx"],
                     "compatibility": ["desktop PC"],
-                    "images": [],
+                    "images": ["img/Sudoku-1.png"],
                     "links": {
-                        "gitHub": ""
+                        "gitHub": "https://github.com/Mems2001/sudokuGenerator"
                     }
                 }
             ],
