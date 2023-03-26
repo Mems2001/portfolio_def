@@ -58,13 +58,40 @@
         "content" : {
             "web" : {
                 "title" : "Web Development" ,
-                "all": {
-                    "html": [] ,
-                    "css": ["Web design" , "Responsive design" , "CSS animations" , "Front-end developement"] ,
-                    "javaScript": ["javaScript", "Object Oriented JavaScript" , "JavaScript frameworks"],
-                    "react": ["Class components" , "useState & useEffect" , "Hooks" , "Api use (Axios)" , "React-Hook-Form" , "React-Router-Dom" , "React-Redux" , "Protected Routes"],
-                    "node": ["Express" , "MVC arquitecture" , "postgreSQL" , "Sequelize (ORM)" , "database design" , "API rest" , "JWT validation" , "Swagger docs" , "Nodemailer" , "CORS" , "Authentication & Authorization" , "Back-end developement"]
-                }
+                "all": [
+                    {   "name": "html",
+                        "skills": [],
+                        "image": "https://cdn-icons-png.flaticon.com/512/5968/5968496.png"
+                    } ,
+                    {   "name": "css",
+                        "skills": ["Web design" , "Responsive design" , "CSS animations" , "Front-end developement"],
+                        "image": "https://cdn-icons-png.flaticon.com/512/29/29600.png"
+                    } ,
+                    {   "name": "javaScript",
+                        "skills": ["javaScript", "Object Oriented JavaScript" , "JavaScript frameworks"],
+                        "image": "https://cdn-icons-png.flaticon.com/512/1/1492.png"
+                    },
+                    {   "name": "react",
+                        "skills": ["Class components" , "useState & useEffect" , "Hooks" , "Api use (Axios)" , "React-Hook-Form" , "React-Router-Dom" , "React-Redux" , "Protected Routes"],
+                        "image": "logos/reactLogo.png"
+                    },
+                    {   "name": "node",                        
+                        "skills": ["Express" , "MVC arquitecture" , "postgreSQL" , "Sequelize (ORM)" , "database design" , "API rest" , "JWT validation" , "Swagger docs" , "Nodemailer" , "CORS" , "Authentication & Authorization" , "Back-end developement"],
+                        "image": "logos/nodejs-logo-144.png"
+                    },
+                    {   "name": "github",
+                        "skills": [],
+                        "image": "logos/github-logo-144.png"
+                    },
+                    {   "name": "svelte",
+                        "skills": [],
+                        "image": ""
+                    },
+                    {   "name": "tailwindCSS",
+                        "skills": [],
+                        "image": "logos/tailwind-css-logo-144.png"
+                    }
+                ]
             } , 
             "lang" : {
                 "title" : "Languages" ,
