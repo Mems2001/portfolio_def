@@ -22,14 +22,15 @@ const CertificateCard = ({info , id}) => {
 
 
   return (
-    <div id={id} className='certificate_card hidden_2'>
+    <div id={id} className={`certificate_card hidden_2`}>
       <h4 className='certificate_title'>{info.title}</h4>
 
-      <img className='certificate_image' src={source}/>
+      <div className={`c c_${id}`}>
+        <a href={info.link} target={'_blank'} className='certificate_btn'>
+          <img className='link_btn' src='buttons/link-btn.png'/>
+        </a>
+      </div>
 
-      <a href={info.link} target={'_blank'} className='certificate_btn'>
-        <img className='link_btn' src='buttons/link-btn.png'/>
-      </a>
     </div>
   )
 }

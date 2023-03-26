@@ -13,7 +13,7 @@ const Portfolio = ({theme , language}) => {
 
       <div className='portfolio_container'>
         {p?.map(
-          element => <ProjectCard project={element} language={language} theme={theme} />
+          element => <ProjectCard key={element.name} project={element} language={language} theme={theme} />
         )}
       </div>
     </section>

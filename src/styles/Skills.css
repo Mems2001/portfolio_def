@@ -1,7 +1,6 @@
 .skills_container {
   display: flex;
   flex-direction: column;
-  border: 0.25rem inset var(--color-1);
   background-color: var(--color-3);
   border-radius: 1rem;
   width: 100%;
@@ -157,7 +156,7 @@
   min-height: 100vh;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
   .skills_container {
     width: 80%;
   }
@@ -175,17 +174,17 @@
     border-top-left-radius: 12rem;
     border-top-right-radius: 12rem;
     
-    width: 60vw;
-    height: 60vw;
+    width: 50vw;
+    height: 50vw;
   }
 
   .logo_container:hover {
-    height: 600px;
+    height: 530px;
   }
 
   .logo_container_2 {
-    width: 60vw;
-    height: 60vw;
+    width: 50vw;
+    height: 50vw;
   }
   
   .logo_image {
