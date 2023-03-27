@@ -1,14 +1,14 @@
 [
     {
         "title" : "Presentation" ,
-        "content" : [
-            "I'm" , "Full-stack web developer"
-        ]
+        "content" : 
+            "i'm Mario Muso"
+        
     } , 
 
     {
         "title" : "About Me" ,
-        "content" : "I'm an Ecuadorian coder who enjoys front-end developement as much as back-end developement. With my proyects i've obtained experience within responsive and interactive web design, css animations and class conditional features sush as light/dark theming; plus, my taste for asbtract puzzles got me agility at solving problems with programming logic."
+        "content" : "a Full-stack web Ecuadorian developer who enjoys front-end developement as much as back-end developement. With my proyects i've obtained experience within responsive and interactive web design, css animations and class conditional features sush as light/dark theming; plus, my taste for asbtract puzzles got me agility at solving problems with programming logic."
     } ,
 
     {

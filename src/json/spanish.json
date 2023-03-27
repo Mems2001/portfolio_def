@@ -1,14 +1,14 @@
 [
     {
         "title" : "Presentación" ,
-        "content" : [
-            "Soy" , "Desarrollador web full-stack"
-        ]
+        "content" :
+            "soy Mario Muso"
+        
     } , 
 
     {
         "title" : "Acerca de Mi" ,
-        "content" : "Soy un programador Ecuatoriano que disfruta tanto el desarrollo front-end como back-end. Con mis proyectos he ganado experiencia en diseño web responsivo e interactivo haciendo uso de animaciones y clases condicionales; además mi gusto por los rompecabezas abstractos me ha conseguido agilidad para la resolución de problemas con lógica de programación."
+        "content" : "un desarrollador web full-stack Ecuatoriano que disfruta tanto el desarrollo front-end como back-end. Con mis proyectos he ganado experiencia en diseño web responsivo e interactivo haciendo uso de animaciones y clases condicionales; además mi gusto por los rompecabezas abstractos me ha conseguido agilidad para la resolución de problemas con lógica de programación."
     } ,
 
     {

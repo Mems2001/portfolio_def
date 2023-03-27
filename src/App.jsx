@@ -90,7 +90,7 @@ function App() {
         eng_btn.classList.remove('linked')
         eng_btn_2.classList.remove('linked')
       }
-    } , [language]
+    }
   )
 
 // NAVIGATOR MOBILE INTERACTIONS
@@ -100,9 +100,9 @@ useEffect(
   () => {
     const navBar = document.querySelector('.navBar_mobile')
     const navBtn = document.querySelector('.navBar_btn_mobile')
+    const links = document.querySelectorAll('.mob_link')
 
-    navBtn.addEventListener("click" , () => {
-
+    const toggleMenu = () => {
       if (showBar) {
         setShowBar(false)
         navBar.classList.remove("show_nav")
@@ -110,37 +110,51 @@ useEffect(
         setShowBar(true)
         navBar.classList.add('show_nav')
       }
-    })
+    }
+
+    navBtn.addEventListener("click" , toggleMenu)
+    links.forEach(link => link.addEventListener('click' , toggleMenu))
+
+    return () => {
+      navBtn.removeEventListener('click' , toggleMenu)
+      links.forEach(link => link.removeEventListener('click' , toggleMenu))
+    }
   } , [showBar]
 )
 
 // LIGHT/DARK THEMES
 const [theme, setTheme] = useState('Light')
+const [iconColor, setIconColor] = useState('#457b9d')
 
 const toggleTheme = () => {
   if (theme === 'Dark') {
     setTheme('Light')
+    setIconColor('#457b9d')
   } else {
     setTheme('Dark')
+    setIconColor('#ea9595')
   }
 }
+
 
 useEffect(
   () => {
     const themeBtn = document.querySelector('.theme_btn')
     const theme_img = document.querySelector('.theme_img')
     
-    themeBtn.addEventListener('click' , () => {
-      if (theme === 'Light') {
-        document.body.classList.remove('light_theme')
-        theme_img.classList.remove('light')
+    const themeToggling = () => {
+    
+        document.body.classList.toggle('light_theme')
+        theme_img.classList.toggle('light')
         toggleTheme()
-      } else {
-        document.body.classList.add('light_theme')
-        theme_img.classList.add('light')
-        toggleTheme()
-      }
-    })
+      
+    }
+
+    themeBtn.addEventListener('click' , themeToggling)
+
+    return () => {
+      themeBtn.removeEventListener('click' , themeToggling)
+    }
   } , [theme]
 )
 
@@ -151,8 +165,8 @@ useEffect(
      <button className='navBar_btn_mobile'>
       {
         showBar?
-        <box-icon type='solid' size='lg' name='x-circle' color={theme==='Dark'?'#ea9595':'#457b9d'} ></box-icon> :
-        <box-icon name='menu' size='lg' color={theme==='Dark'?'#ea9595':'#457b9d'} ></box-icon>
+        <box-icon type='solid' size='lg' name='x-circle' color={iconColor} ></box-icon> :
+        <box-icon name='menu' size='lg' color={iconColor} ></box-icon>
       }
      </button>
 

@@ -6,7 +6,6 @@ import SkillCard from './SkillCard'
 const SkillSet = ({language}) => {
 
   const skills = language[3].content.web.all
-  console.log(skills)
 
   // ANIMATIONS
 
