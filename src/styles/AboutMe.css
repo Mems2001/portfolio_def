@@ -29,14 +29,14 @@
   width: 375px;
 
   cursor: pointer;
-  background-image: url("public/photos/foto_1.jpeg");
+  background-image: url("/public/photos/foto_1.jpeg");
   background-size: cover;
 
   transition: background-image 0.5s ease;
 }
 
 .personal_photo:hover {
-  background-image: url("public/photos/foto_2.jpeg");
+  background-image: url("/public/photos/foto_2.jpeg");
 
   transition: background-image 0.5s ease;
 }

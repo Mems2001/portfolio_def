@@ -8,7 +8,7 @@ const AboutMe = ({language}) => {
       <div className='aboutMe hidden_2' id='fewWords'>
         <h2>{language[1].title}</h2>
 
-        <p>Hi, <strong>{language[0].content}</strong>, {language[1].content}</p>
+        <p><strong>{language[0].content}</strong>, {language[1].content}</p>
       </div>
 
       <div className='presentation hidden_2' id='presentation'>
