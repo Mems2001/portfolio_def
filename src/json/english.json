@@ -112,9 +112,41 @@
         "content" : {
             "projects": [
                 {
+                    "description": "This CV page itself! Front-end project developed with react with css animations, conditional css features such as language and theme toggling, responsive desing, react components arquitecture, and more!",
+                    "name": "Mems CV",
+                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite"],
+                    "compatibility": ["desktop PC" , "mobile" , "tablet"],
+                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/portfolio_def",
+                        "netlify": "https://memsportafolio.netlify.app/"
+                    }
+                },
+                {
+                    "description": "Developed for a local emerging arquitectural office the proyect required be to accesible for both parts at all stages with a week as deadline. With that in sight the better choice for a simple and quick developing, but yet functional landing page was flutterflow. This proyect is still open to modifications.",
+                    "name": "Sierra Hábitat",
+                    "languages": ["flutterflow" , "firebase" , "google-cloud"],
+                    "compatibility": ["desktop PC" , "laptop" , "mobile" , "tablet"],
+                    "images": ["img/sierra/sierra1.png" , "img/sierra/sierra2.png" , "img/sierra/sierra3.png" , "img/sierra/sierra4.png" , "img/sierra/sierra5.png"],
+                    "links": {
+                        "netlify": "https://sierra-habitat.flutterflow.app/homePage"
+                    }
+                },
+                {
+                    "description": "Within React and node.js this proyect focus on sudoku's logic and functionality, such as sudoku's generation or puzzle's generation from them as well as validating each user's in game action. Besides, it can handle anonymous users and games saving and many other features.",
+                    "name": "Sudoku 2.1",
+                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite" , "node.js"],
+                    "compatibility": ["desktop PC" , "laptop"],
+                    "images": ["img/sudoku2.1/sudoku2.1_1.png" , "img/sudoku2.1/sudoku2.1_2.png" , "img/sudoku2.1/sudoku2.1_3.png" , "img/sudoku2.1/sudoku2.1_4.png" , "img/sudoku2.1/sudoku2.1_5.png" ],
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/sudoku_web_app",
+                        "netlify": "https://sudoku21.netlify.app/"
+                    }
+                },
+                {
                     "description": "E-commerce front-end excercise developed with react, focused on external api comsumption, chart functionalities, users management and visualization of selected products. Unfortunately the api used is currently off-line, however, react project repository can be checked at gitHub.",
                     "name": "entregable 6" ,
-                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "languages": [ "hmtl" , "css" , "javaScript" , "react-vite"] ,
                     "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
                     "images": [ "img/entregable6/entregable6.png" , "img/entregable6/entregable6(2).png" , "img/entregable6/entregable6(3).png" , "img/entregable6/entregable6(4).png" , "img/entregable6/entregable6(5).png" ] ,
                     "links": {
@@ -125,7 +157,7 @@
                 {
                     "description": "Front-end excercise developed with react, focused on css responsive design, class components design, conditional component rendering, search and filter functionalities, protected routes and external api comsuption.",
                     "name": "entregable 5" ,
-                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "languages": [ "hmtl" , "css" , "javaScript" , "react-vite" ] ,
                     "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
                     "images": [ "img/entregable5/entregable5-prov.png" , "img/entregable5/entregable5(2).png" , "img/entregable5/entregable5(3).png" , "img/entregable5/entregable5(4).png" ] ,
                     "links": {
@@ -136,7 +168,7 @@
                 {
                     "description": "Front-end excercise developed with react, focused on class components design, conditional component rendering, search and filter functionalities and external api comsuption.",
                     "name": "entregable 3" ,
-                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "languages": [ "hmtl" , "css" , "javaScript" , "react-vite"] ,
                     "compatibility": [ "desktop PC" , "laptop" ] ,
                     "images": [ "img/entregable3/entregable3-prov.png" , "img/entregable3/entregable3(2).png" ] ,
                     "links": {
@@ -156,20 +188,9 @@
                     }
                 },
                 {
-                    "description": "This CV page itself! Front-end project developed with react with css animations, conditional css features such as language and theme toggling, responsive desing, react components arquitecture, and more!",
-                    "name": "Mems CV",
-                    "languages": ["hmtl" , "css" , "javaScript" , "jsx"],
-                    "compatibility": ["desktop PC" , "mobile"],
-                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
-                    "links": {
-                        "gitHub": "https://github.com/Mems2001/portfolio_def",
-                        "netlify": "https://memsportafolio.netlify.app/"
-                    }
-                },
-                {
                     "description": "The main function of the api as an algorithm is to produce random sudoku puzzles, however, it has a simple react web app for data visualization of the puzzle expecting further functions just like any sudoku game! (Unfortunately this api isn't currently online, but you can check the repository!)",
                     "name": "Sudoku app (on developement)",
-                    "languages": ["html" , "css" , "javaScript" , "jsx"],
+                    "languages": ["html" , "css" , "javaScript" , "react-vite" , "node.js"],
                     "compatibility": ["desktop PC"],
                     "images": ["img/Sudoku-1.png"],
                     "links": {

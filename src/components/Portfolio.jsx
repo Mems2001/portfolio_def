@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../styles/Portfolio.css'
+
 import ProjectCard from './ProjectCard'
 
 const Portfolio = ({theme , language}) => {

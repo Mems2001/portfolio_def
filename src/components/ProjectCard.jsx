@@ -72,7 +72,7 @@ const ProjectCard = ({project , language , theme}) => {
           </div>
 
           <div className='spec_container'>
-            <h4>{language === english? 'Languages: ' : 'Lenguajes: '}</h4>
+            <h4>{language === english? 'Tools: ' : 'Herramientas: '}</h4>
             <ul>
               {project.languages.map(language => 
                 <li>{language}</li>

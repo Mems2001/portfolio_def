@@ -136,7 +136,7 @@ const toggleTheme = () => {
   }
 }
 
-
+// Themes toggling
 useEffect(
   () => {
     const themeBtn = document.querySelector('.theme_btn')
@@ -183,11 +183,11 @@ useEffect(
      <main className='main_container'>
      <AboutMe language={language}/>
 
-     <Education language={language}/>
+     <Portfolio theme={theme} language={language}/>
 
      <SkillSet language={language}/>
-
-     <Portfolio theme={theme} language={language}/>
+     
+     <Education language={language}/>
 
      <Contact language={language}/>
      </main>

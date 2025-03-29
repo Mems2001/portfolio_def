@@ -105,44 +105,76 @@
                 }
             }
         }
-    } ,
+        } ,
 
-    {
-        "title" : "Portafolio" ,
-        "content" : {
-            "projects": [
+        {
+            "title" : "Portafolio" ,
+            "content" : {
+                "projects": [
+                {
+                    "description": "Esta página misma! Proyecto Front-end desarrollado con react con animaciones css, css condicional para características como cambio de temas e idiomas, diseño responsivo, arquitectura de react con componentes, y más!",
+                    "name": "Mems CV",
+                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite"],
+                    "compatibility": ["desktop PC" , "laptop" , "mobile" , "tablet"],
+                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/portfolio_def",
+                        "netlify": "https://memsportafolio.netlify.app/"
+                    }
+                },
+                {
+                    "description": "Desarrollado para una oficina local de arquitectura el proyecto tenía que ser accesible para ambas partes en todas las etapas en un semana de plazo. Con eso mente, la mejor opción para un proyecto de desarollo simple y rápido pero completamente funcional fue flutterflow. El proyecto aún recibirá modificaciones.",
+                    "name": "Sierra Hábitat",
+                    "languages": ["flutterflow" , "firebase" , "google-cloud"],
+                    "compatibility": ["desktop PC" , "laptop" , "mobile" , "tablet"],
+                    "images": ["img/sierra/sierra1.png" , "img/sierra/sierra2.png" , "img/sierra/sierra3.png" , "img/sierra/sierra4.png" , "img/sierra/sierra5.png"],
+                    "links": {
+                        "netlify": "https://sierra-habitat.flutterflow.app/homePage"
+                    }
+                },
+                {
+                    "description": "Usando react y node.js este proyecto se centra en las funcionalidades y lógica del sudoku en backend, como los algoritmos para generar aleatoriamente un sudoku válido y convertilo en un rompecabezas válido o verificar el progreso del usuario durante una partida. Además cuenta la capacidad para manejar usuarios anónimos y guardar partidas.",
+                    "name": "Sudoku 2.1",
+                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite" , "node.js"],
+                    "compatibility": ["desktop PC" , "laptop"],
+                    "images": ["img/sudoku2.1/sudoku2.1_1.png" , "img/sudoku2.1/sudoku2.1_2.png" , "img/sudoku2.1/sudoku2.1_3.png" , "img/sudoku2.1/sudoku2.1_4.png" , "img/sudoku2.1/sudoku2.1_5.png" ],
+                    "links": {
+                        "gitHub": "https://github.com/Mems2001/sudoku_web_app",
+                        "netlify": "https://sudoku21.netlify.app/"
+                    }
+                },
                 {
                     "description": "Ejercicio de e-commerce para front-end desarrollado con react, enfocado en el consumo de api externas, funcionalidad del carrito de compras, manejo de usuarios y visualización de productos seleccionados. Desafortunadamente la api usada se encuentra fuera de servicio, pero el repositorio del proyecto puede ser revisado en gitHub.",
                     "name": "entregable 6" ,
-                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "languages": [ "hmtl" , "css" , "javaScript" , "react-vite"] ,
                     "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
                     "images": [ "img/entregable6/entregable6.png" , "img/entregable6/entregable6(2).png" , "img/entregable6/entregable6(3).png" , "img/entregable6/entregable6(4).png" , "img/entregable6/entregable6(5).png" ] ,
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable6" ,
                         "netlify": "https://entregable6-mems.netlify.app/"
-        }
+                    }
                 } ,
                 {
                     "description": "Ejercicio de front-end desarollado con react, enfocado en diseño responsivo con css, diseño con componentes de clase, renderizado condicional de componentes, funcionalidades de filtrado y búsqueda, rutas protegidas y consumo de api externas.",
                     "name": "entregable 5" ,
-                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "languages": [ "hmtl" , "css" , "javaScript" , "react-vite"] ,
                     "compatibility": [ "desktop PC" , "mobile" , "tablet" , "laptop" ] ,
                     "images": [ "img/entregable5/entregable5-prov.png" , "img/entregable5/entregable5(2).png" , "img/entregable5/entregable5(3).png" , "img/entregable5/entregable5(4).png" ] ,
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable5" ,
                         "netlify": "https://entregable5-mems.netlify.app/"
-        }
+                    }
                 },
                 {
                     "description": "Ejercicio de front-end desarrollado con react, enfocado en diseño con componentes de clase, renderizado condicional de componentes, funcionalidades de filtrado y búsqueda y consumo de api externas.",
                     "name": "entregable 3" ,
-                    "languages": [ "hmtl" , "css" , "javaScript" ] ,
+                    "languages": [ "hmtl" , "css" , "javaScript" , "react-vite"] ,
                     "compatibility": [ "desktop PC" , "laptop" ] ,
                     "images": [ "img/entregable3/entregable3-prov.png" , "img/entregable3/entregable3(2).png" ] ,
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable3" ,
                         "netlify": "https://entregable3-mems.netlify.app/"
-        }
+                    }
                 },
                 {
                     "description": "Ejercicio de front-end enfocado en consumo de api externas, diseño responsivo con css, y diseño condicional con css",
@@ -153,23 +185,12 @@
                     "links": {
                         "gitHub": "https://github.com/Mems2001/reactEntregable2" ,
                         "netlify": "https://entregable2-mems.netlify.app/"
-        }
-                },
-                {
-                    "description": "Esta página misma! Proyecto Front-end desarrollado con react con animaciones css, css condicional para características como cambio de temas e idiomas, diseño responsivo, arquitectura de react con componentes, y más!",
-                    "name": "Mems CV",
-                    "languages": ["hmtl" , "css" , "javaScript" , "jsx"],
-                    "compatibility": ["desktop PC" , "mobile"],
-                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
-                    "links": {
-                        "gitHub": "https://github.com/Mems2001/portfolio_def",
-                        "netlify": "https://memsportafolio.netlify.app/"
                     }
                 },
                 {
                     "description": "La función principal de la api como algoritmo es producir sudokus aleatorios, además, tiene una app simple con React para visualización de datos e implementación futura de funciones como las de cualquier juego Sudoku! (Desafortunadamente la api no está online, pero se puede revisar el repositorio!)",
                     "name": "Sudoku app (en desarrollo)",
-                    "languages": ["html" , "css" , "javaScript" , "jsx"],
+                    "languages": ["html" , "css" , "javaScript" , "react-vite" , "node.js"],
                     "compatibility": ["desktop PC"],
                     "images": ["img/Sudoku-1.png"],
                     "links": {
