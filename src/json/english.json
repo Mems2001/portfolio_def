@@ -67,9 +67,19 @@
                         "skills": ["Web design" , "Responsive design" , "CSS animations" , "Front-end developement"],
                         "image": "https://cdn-icons-png.flaticon.com/512/29/29600.png"
                     } ,
-                    {   "name": "javaScript",
+                    {   "name": "JavaScript",
                         "skills": ["javaScript", "Object Oriented JavaScript" , "JavaScript frameworks"],
                         "image": "https://cdn-icons-png.flaticon.com/512/1/1492.png"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "skills": [],
+                        "image": "https://cdn-icons-png.flaticon.com/512/5968/5968566.png"
+                    },
+                    {
+                        "name": "Python",
+                        "skills": [],
+                        "image": "https://cdn-icons-png.flaticon.com/512/5968/5968544.png"
                     },
                     {   "name": "react",
                         "skills": ["Class components" , "useState & useEffect" , "Hooks" , "Api use (Axios)" , "React-Hook-Form" , "React-Router-Dom" , "React-Redux" , "Protected Routes"],
@@ -135,12 +145,13 @@
                 {
                     "description": "Within React and node.js this proyect focus on sudoku's logic and functionality, such as sudoku's generation or puzzle's generation from them as well as validating each user's in game action. Besides, it can handle anonymous users and games saving and many other features.",
                     "name": "Sudoku 2.1",
-                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite" , "node.js"],
+                    "languages": ["hmtl" , "css" , "TypeScript" , "react-vite" , "node.js"],
                     "compatibility": ["desktop PC" , "laptop"],
                     "images": ["img/sudoku2.1/sudoku2.1_1.png" , "img/sudoku2.1/sudoku2.1_2.png" , "img/sudoku2.1/sudoku2.1_3.png" , "img/sudoku2.1/sudoku2.1_4.png" , "img/sudoku2.1/sudoku2.1_5.png" ],
                     "links": {
-                        "gitHub": "https://github.com/Mems2001/sudoku_web_app",
-                        "netlify": "https://sudoku21.netlify.app/"
+                        "gitHub": "https://github.com/Mems2001/sudoku2.1_web_app",
+                        "netlify": "https://sudoku21.netlify.app/",
+                        "other": "https://github.com/Mems2001/sudoku_db"
                     }
                 },
                 {

@@ -98,6 +98,11 @@ const ProjectCard = ({project , language , theme}) => {
           <a href={project.links.gitHub} target={'_blank'}>
             <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
           </a>
+          {project.links.other?
+            <a href={project.links.other} target={'_black'}>
+              <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
+            </a>: ''
+          }
           {project.links.netlify ? 
           <a href={project.links.netlify} target={'_blank'}>
             <img className='link_logo' src={`logos/netlify-logo-144${theme==='Dark'?'D':'L'}.png`}/>
