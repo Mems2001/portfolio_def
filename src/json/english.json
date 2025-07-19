@@ -49,6 +49,13 @@
                 "image": "certificates/full.png",
                 "QR": "certificates/Full_QR.png",
                 "link": "https://certificates.academlo.com/en/verify/25867238250436"
+            },
+            {
+                "id": "five",
+                "title": "Flutterflow Web Development",
+                "image": "certificates/flutterflow.png",
+                "QR": "",
+                "link": ""
             }
         ]
     } ,
