@@ -138,6 +138,15 @@
   background-image: url('/certificates/Fundamentos_QR.png');
 }
 
+.c_five {
+  background-image: url('/certificates/flutterflow.png');
+  background-size: cover;
+}
+
+.c_five:hover {
+  background-image: url('/certificates/flutterflow.png');
+}
+
 .certificate_main_title {
   margin: 2rem;
   margin-top: 20vh;
