@@ -92,19 +92,14 @@
                         "image": "https://cdn-icons-png.flaticon.com/512/5968/5968544.png"
                     },
                     {   
-                        "name": "react",
+                        "name": "React",
                         "skills": ["Class components" , "useState & useEffect" , "Hooks" , "Api use (Axios)" , "React-Hook-Form" , "React-Router-Dom" , "React-Redux" , "Protected Routes"],
                         "image": "logos/reactLogo.png"
                     },
-                    {   
-                        "name": "node",                        
-                        "skills": ["Express" , "MVC arquitecture" , "postgreSQL" , "Sequelize (ORM)" , "database design" , "API rest" , "JWT validation" , "Swagger docs" , "Nodemailer" , "CORS" , "Authentication & Authorization" , "Back-end developement"],
-                        "image": "logos/nodejs-logo-144.png"
-                    },
-                    {   
-                        "name": "github",
-                        "skills": [],
-                        "image": "logos/github-logo-144.png"
+                    {
+                        "name": "Angular",
+                        "skills": ["Signals & Observers", "SSR", "Routing", "Protected Routes", "CSS animations", "Responsive design", "Strong Typying", "Front-end developement"],
+                        "image": "logos/angular_logo.png"
                     },
                     {   
                         "name": "svelte",
@@ -115,6 +110,21 @@
                         "name": "tailwindCSS",
                         "skills": [],
                         "image": "logos/tailwind-css-logo-144.png"
+                    },
+                    {   
+                        "name": "NodeJs",                        
+                        "skills": ["Express" , "MVC arquitecture" , "Sequelize (ORM)" , "API rest" , "JWT validation" , "Swagger docs" , "Nodemailer" , "CORS" , "Authentication & Authorization" , "Back-end developement"],
+                        "image": "logos/nodejs-logo-144.png"
+                    },
+                    {
+                        "name": "PostgreSQL",
+                        "skills": ["database design", "database normalization", "maintainance", "scalability"],
+                        "image": "logos/postgreSQL_logo.png"
+                    },
+                    {   
+                        "name": "github",
+                        "skills": [],
+                        "image": "logos/github-logo-144.png"
                     }
                 ]
             } , 

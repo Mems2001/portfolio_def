@@ -20,24 +20,25 @@
 
   grid-template-columns: repeat(4 , 1fr);
   grid-auto-flow: row;
-  gap: auto;
 
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .skills_title {
   align-self: center;
   margin-top: 1rem;
 
+  font-weight: 800;
+
   color: var(--lcolor-5);
 }
 
 .skill_name {
   position: absolute;
-  top: 1rem;
+  top: 8.5rem;
 
   width: 100%;
 
@@ -46,10 +47,6 @@
 }
 
 .logo_container {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-
   height: 12rem;
   width: 12rem;
 
@@ -59,12 +56,16 @@
 
   cursor: pointer;
   overflow: hidden;
+
+  transition: all 300ms ease
 }
 
 .logo_container:hover {
   height: 31rem;
-  
+
   background-color: var(--color-1);
+
+  transition: all 300ms ease;
 }
 
 .skills_list {
@@ -101,8 +102,9 @@
 }
 
 .logo_image {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 2rem;
 }
 
 .language_container {
@@ -176,12 +178,12 @@
     flex-direction: column;
     align-items: center;
 
-    padding-top: 5vh;
-    gap: 3vh;
+    padding-top: 3vh;
+    gap: 2vh;
   }
 
   .skill_name {
-    top: 0rem;
+    top: 10rem;
   }
   
   .logo_container {
@@ -202,7 +204,8 @@
   }
   
   .logo_image {
-    height: 70%;
+    height: 55%;
+    width: 55%;
   }
 
   .language_container {
