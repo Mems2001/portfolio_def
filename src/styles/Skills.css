@@ -183,7 +183,7 @@
   }
 
   .skill_name {
-    top: 11rem;
+    top: 12rem;
   }
   
   .logo_container {
@@ -206,6 +206,7 @@
   .logo_image {
     height: 55%;
     width: 55%;
+    margin-bottom: 1rem;
   }
 
   .language_container {
