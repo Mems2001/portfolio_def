@@ -102,7 +102,7 @@
   grid-column-end: 3;
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
-  grid-template-rows: repeat(2 , fit-content);
+  grid-template-rows: repeat(2 , auto);
 
   background-color: var(--color-1);
   border-radius: 1rem;
@@ -113,8 +113,8 @@
 .extended_images {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
 
   position: relative;
 }
@@ -149,8 +149,8 @@
   position: absolute;
   left: 6%;
 
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
 
   background-color: transparent;
   border: none;
@@ -170,11 +170,15 @@
 }
 
 .next_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   position: absolute;
   right: 6%;
 
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
 
   background-color: transparent;
   border: none;
@@ -192,6 +196,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .link_info {
@@ -236,12 +241,12 @@
 .specifications {
   width: 100%;
 
-  padding-right: 15%;
-  padding-left: 10%;
+  padding-right: 8%;
+  padding-left: 8%;
 
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
 }
 
@@ -299,17 +304,16 @@
     justify-content: space-between;
 
     width: 90vw;
-    height: 760px;
+    height: 90vh;
   }
 
   .extended_images {
-    width: 100%;
     height: fit-content;
   }
 
   .extended_image {
-    max-width: 100%;
-    max-height: 20vh;
+    max-width: 90vw;
+    max-height: 25vh;
   }
 
   .specifications {
@@ -331,7 +335,7 @@
   }
 
   .links_container {
-    margin-bottom: 2vh;
+    padding-bottom: 1.5rem;
   }
 
   .link_info {
