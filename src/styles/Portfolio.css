@@ -127,6 +127,9 @@
 }
 
 .project_close_btn {
+  display: flex;
+  align-items: center;
+
   height: 2.5rem;
   width: 2.5rem;
 
@@ -316,6 +319,9 @@
   .extended_image {
     max-width: 90vw;
     max-height: 25vh;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .specifications {
@@ -346,5 +352,10 @@
 
   .link_logo {
     width: 4rem;
+  }
+
+  .project_close_btn {
+    height: 2rem;
+    width: 2rem;
   }
 }
