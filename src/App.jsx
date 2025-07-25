@@ -186,7 +186,7 @@ useEffect(
      <main className='main_container'>
      <AboutMe language={language}/>
 
-     <Portfolio theme={theme} language={language}/>
+     <Portfolio theme={theme} language={language} iconColor={iconColor}/>
 
      <SkillSet language={language}/>
      

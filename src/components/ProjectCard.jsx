@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import english from '../json/english.json'
 
-const ProjectCard = ({project , language , theme}) => {
+const ProjectCard = ({project , language , theme, iconColor}) => {
 
   const [display, setDisplay] = useState(false)
 
@@ -122,7 +122,7 @@ const ProjectCard = ({project , language , theme}) => {
         </div>
         
         <button onClick={showDetails} className='project_close_btn'>
-          X
+          <box-icon name='x' size='md' color={iconColor} ></box-icon>
         </button>
       </div>
     )

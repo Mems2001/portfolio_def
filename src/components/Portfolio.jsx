@@ -4,7 +4,7 @@ import '../styles/Portfolio.css'
 
 import ProjectCard from './ProjectCard'
 
-const Portfolio = ({theme , language}) => {
+const Portfolio = ({theme , language, iconColor}) => {
 
   const p = language[4].content.projects
 
@@ -14,7 +14,7 @@ const Portfolio = ({theme , language}) => {
 
       <div className='portfolio_container'>
         {p?.map(
-          element => <ProjectCard key={element.name} project={element} language={language} theme={theme} />
+          element => <ProjectCard key={element.name} project={element} language={language} theme={theme} iconColor={iconColor}/>
         )}
       </div>
     </section>
