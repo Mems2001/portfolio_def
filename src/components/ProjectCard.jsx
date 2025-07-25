@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react'
 
 import english from '../json/english.json'
@@ -56,7 +56,7 @@ const ProjectCard = ({project , language , theme}) => {
     return (
       <div className='extended_details'>
         <div className='extended_images'>
-          <button on className='prev_btn' onClick={prevImage}>
+          <button className='prev_btn' onClick={prevImage}>
             <box-icon name='caret-left' size='lg' color={theme==='Dark'?'#951d20':'#a8dadc'}></box-icon>
           </button>
           <img className='extended_image' src={images[n]}/>
@@ -74,8 +74,8 @@ const ProjectCard = ({project , language , theme}) => {
           <div className='spec_container'>
             <h4>{language === english? 'Tools: ' : 'Herramientas: '}</h4>
             <ul>
-              {project.languages.map(language => 
-                <li>{language}</li>
+              {project.languages.map((language, index) => 
+                <li key={index}>{language}</li>
                 )}
             </ul>
           </div>
@@ -83,8 +83,8 @@ const ProjectCard = ({project , language , theme}) => {
           <div className='spec_container'>
             <h4>{language === english? 'Compatibility: ' : 'Compatibilidad: '}</h4>
             <ul>
-              {project.compatibility.map(element => 
-                <li>{element}</li>
+              {project.compatibility.map((element, index) => 
+                <li key={index}>{element}</li>
               )}
             </ul>
           </div>
@@ -95,22 +95,35 @@ const ProjectCard = ({project , language , theme}) => {
         </div>
 
         <div className='links_container'>
-          <a href={project.links.gitHub} target={'_blank'}>
-            <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
-          </a>
-          {project.links.other?
-            <a href={project.links.other} target={'_black'}>
+          <div className='link_info'>
+            <a href={project.links.gitHub} target={'_blank'}>
               <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
-            </a>: ''
+            </a>
+            <span>Front-end</span>
+          </div>
+          {project.links.other?
+            <div className='link_info'>
+              <a href={project.links.other} target={'_black'}>
+                <img className='link_logo' src={`logos/github-logo-144${theme==='Dark'?'D':'L'}.png`}/>
+              </a>
+              <span>Back-end</span>
+            </div>
+            : ''
           }
           {project.links.netlify ? 
-          <a href={project.links.netlify} target={'_blank'}>
-            <img className='link_logo' src={`logos/netlify-logo-144${theme==='Dark'?'D':'L'}.png`}/>
-          </a> : ''
+          <div className='link_info'>
+            <a href={project.links.netlify} target={'_blank'}>
+              <img className='link_logo' src={`logos/netlify-logo-144${theme==='Dark'?'D':'L'}.png`}/>
+            </a> 
+            <span>Web</span>
+          </div>
+          : ''
           }
         </div>
         
-        <button onClick={showDetails} className='project_close_btn'></button>
+        <button onClick={showDetails} className='project_close_btn'>
+          X
+        </button>
       </div>
     )
   } else {

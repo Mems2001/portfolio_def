@@ -51,7 +51,7 @@ function App() {
           }
         })
       } , {
-        threshold: 0.25
+        threshold: 0.1
       })
 
       const observer1 = new IntersectionObserver(entries => {
@@ -99,6 +99,7 @@ const [showBar, setShowBar] = useState(false)
 useEffect(
   () => {
     const navBar = document.querySelector('.navBar_mobile')
+    const auxiliar = document.querySelector('.auxiliar-nav')
     const navBtn = document.querySelector('.navBar_btn_mobile')
     const links = document.querySelectorAll('.mob_link')
 
@@ -106,9 +107,11 @@ useEffect(
       if (showBar) {
         setShowBar(false)
         navBar.classList.remove("show_nav")
+        auxiliar.classList.remove("show_aux")
       } else {
         setShowBar(true)
         navBar.classList.add('show_nav')
+        auxiliar.classList.add('show_aux')
       }
     }
 
@@ -161,7 +164,7 @@ useEffect(
   return (
     <div className="App">
      <NavBar changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language}/>
-     <NavBarMobile changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language}/>
+     <NavBarMobile changeLangEsp={changeLangEsp} changeLangEng={changeLangEng} language={language} setShowBar={setShowBar} showBar={showBar}/>
      <button className='navBar_btn_mobile'>
       {
         showBar?

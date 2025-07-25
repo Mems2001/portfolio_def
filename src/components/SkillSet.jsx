@@ -49,8 +49,8 @@ const SkillSet = ({language}) => {
 
         <div className='skills_container_3'>
 
-        {skills?.map(skill => 
-          <SkillCard skill={skill} />
+        {skills?.map((skill, index) => 
+          <SkillCard key={index} skill={skill} />
         )}
 
         </div>  

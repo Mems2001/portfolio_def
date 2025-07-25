@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SkillCard = ({skill}) => {
 
   if (skill.skills.length > 0) {
@@ -13,7 +11,7 @@ const SkillCard = ({skill}) => {
 
         <div className='skills_list'>
           {skill.skills.map(element => 
-            <span className='particular_skills'>{element}</span>
+            <span key={element} className='particular_skills'>{element}</span>
             )}
         </div>
       </div>

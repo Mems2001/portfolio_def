@@ -66,15 +66,18 @@
             "web" : {
                 "title" : "Desarrollo Web" ,
                 "all": [
-                    {   "name": "html",
+                    {   
+                        "name": "html",
                         "skills": [],
                         "image": "https://cdn-icons-png.flaticon.com/512/5968/5968496.png"
                     } ,
-                    {   "name": "css",
+                    {   
+                        "name": "css",
                         "skills": ["Web design" , "Responsive design" , "CSS animations" , "Front-end developement"],
                         "image": "https://cdn-icons-png.flaticon.com/512/29/29600.png"
                     } ,
-                    {   "name": "JavaScript",
+                    {   
+                        "name": "JavaScript",
                         "skills": ["javaScript", "Object Oriented JavaScript" , "JavaScript frameworks"],
                         "image": "https://cdn-icons-png.flaticon.com/512/1/1492.png"
                     },
@@ -88,23 +91,28 @@
                         "skills": [],
                         "image": "https://cdn-icons-png.flaticon.com/512/5968/5968544.png"
                     },
-                    {   "name": "react",
+                    {   
+                        "name": "react",
                         "skills": ["Class components" , "useState & useEffect" , "Hooks" , "Api use (Axios)" , "React-Hook-Form" , "React-Router-Dom" , "React-Redux" , "Protected Routes"],
                         "image": "logos/reactLogo.png"
                     },
-                    {   "name": "node",                        
+                    {   
+                        "name": "node",                        
                         "skills": ["Express" , "MVC arquitecture" , "postgreSQL" , "Sequelize (ORM)" , "database design" , "API rest" , "JWT validation" , "Swagger docs" , "Nodemailer" , "CORS" , "Authentication & Authorization" , "Back-end developement"],
                         "image": "logos/nodejs-logo-144.png"
                     },
-                    {   "name": "github",
+                    {   
+                        "name": "github",
                         "skills": [],
                         "image": "logos/github-logo-144.png"
                     },
-                    {   "name": "svelte",
+                    {   
+                        "name": "svelte",
                         "skills": [],
                         "image": "logos/svelte-logo.png"
                     },
-                    {   "name": "tailwindCSS",
+                    {   
+                        "name": "tailwindCSS",
                         "skills": [],
                         "image": "logos/tailwind-css-logo-144.png"
                     }

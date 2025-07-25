@@ -92,7 +92,7 @@
   align-items: center;
 
   background-color: var(--color-2);
-  box-shadow: var(--color-1) 0 0 0.5rem 0.5rem;
+  box-shadow: var(--color-1) 0 0 0.25rem 0.25rem;
 
   position: fixed;
   z-index: 1;
@@ -103,9 +103,24 @@
   transition: transform 0.5s ease;
 }
 
+.auxiliar-nav {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  /* background-color: black; */
+  z-index: 1;
+}
+
 .show_nav {
   transform: translateX(0);
   transition: transform 0.5s ease;
+}
+
+.show_aux {
+  display: flex;
 }
 
 .navBar_list_lang {

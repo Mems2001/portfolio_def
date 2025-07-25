@@ -126,8 +126,14 @@
 }
 
 .project_close_btn {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.75rem;
+  width: 1.75rem;
+
+  background-color: var(--color-2);
+  color: var(--color-5);
+
+  border-bottom-left-radius: 50%;
+  border: 0;
 
   position: absolute;
   top: 0;
@@ -187,8 +193,17 @@
   align-items: center;
 }
 
+.link_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--lcolor-8);
+}
+
 .link_logo {
-  width: 7rem;
+  width: 6rem;
 
   border-radius: 50%;
   
@@ -225,7 +240,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -298,7 +313,7 @@
   .specifications {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 0;
     
     padding: 0;
     padding-left: 1vw;
@@ -308,7 +323,20 @@
     overflow: hidden;
   }
 
+  .spec_container {
+    font-size: 0.75rem;
+    border-radius: 0;
+  }
+
   .links_container {
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
+  }
+
+  .link_info {
+    font-size: 0.75rem;
+  }
+
+  .link_logo {
+    width: 4rem;
   }
 }
