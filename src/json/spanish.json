@@ -158,6 +158,18 @@
                     }
                 },
                 {
+                    "description": "Web app para un emprendimiento local de ropa que espera rendimiento y fiabilidad. Con eso en mente la elección fue Angular para aprovechar su SSR y su afinidad con el SEO. Además cuenta con un backend desarrollado con NodeJs y una base de datos relacional con postreSQL.",
+                    "name": "Fox Roots 593",
+                    "languages": ["Angular", "NodeJs", "postgreSQL", "express", "TypeScript"],
+                    "compatibility": ["mobile"],
+                    "images": ["img/fox-roots/fox-roots-1.png","img/fox-roots/fox-roots-2.jpeg","img/fox-roots/fox-roots-3.jpeg","img/fox-roots/fox-roots-4.jpeg","img/fox-roots/fox-roots-5.jpeg","img/fox-roots/fox-roots-6.jpeg"],
+                    "links": {
+                        "netlify": "https://foxroots593.netlify.app/",
+                        "gitHub": "https://github.com/Mems2001/fox_roots_ec",
+                        "other": "https://github.com/Mems2001/fox_roots_backend"
+                    }
+                },
+                {
                     "description": "Usando react y node.js este proyecto se centra en las funcionalidades y lógica del sudoku en backend, como los algoritmos para generar aleatoriamente un sudoku válido y convertilo en un rompecabezas válido o verificar el progreso del usuario durante una partida. Además cuenta la capacidad para manejar usuarios anónimos y guardar partidas.",
                     "name": "Sudoku 2.1",
                     "languages": ["hmtl" , "css" , "TypeScript" , "react-vite" , "node.js"],
@@ -220,7 +232,7 @@
                     "compatibility": ["desktop PC"],
                     "images": ["img/Sudoku-1.png"],
                     "links": {
-                        "gitHub": "https://github.com/Mems2001/sudokuGenerator"
+                        "other": "https://github.com/Mems2001/sudokuGenerator"
                     }
                 }
             ],
