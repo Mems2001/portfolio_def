@@ -319,7 +319,7 @@
   .specifications {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
     
     padding: 0;
     padding-left: 1vw;
