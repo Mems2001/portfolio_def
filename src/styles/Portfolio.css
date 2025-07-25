@@ -132,6 +132,7 @@
 
   background-color: var(--color-2);
   color: var(--color-5);
+  font-weight: 800;
 
   border-bottom-left-radius: 50%;
   border: 0;
@@ -272,7 +273,8 @@
 }
 
 .spec_container h4 {
-  font-weight: 500;
+  font-weight: 800;
+  color: var(--color-9);
 }
 
 .spec_container li {

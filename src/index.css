@@ -34,7 +34,7 @@
   --lcolor-7: #e67f7f;
   --lcolor-6: #e26a6a;
   --lcolor-5: #de5454;
-  --lcolor-9: #262626;
+  --lcolor-9: #c12428;
   --lcolor-10: #6a1518;
 }
 
@@ -73,6 +73,8 @@ body.light_theme {
   --lcolor-4: #457b9d;
   --lcolor-5: #1d3557;
   --lcolor-8: #1d3557;
+  --lcolor-9: #000000;
+
 }
 
 a {
