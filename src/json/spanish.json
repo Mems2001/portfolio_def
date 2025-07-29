@@ -19,6 +19,9 @@
             ] ,
             "academlo" : [
                 "Academlo" , "Desarrollador Web Full-stack" , "2022-2023" , "logos/logo_academlo2.png"
+            ],
+            "cotac": [
+                "COTAC", "Bachiller Físico Matemático", "2005-2011", "logos/cotac-logo.png"
             ]
         },
         "certificates": [

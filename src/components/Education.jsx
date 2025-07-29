@@ -15,8 +15,9 @@ const Education = ({language}) => {
       <h2 className='section_title'>{language[2].title}</h2>
 
       <div className='education_container'>
-        <EdCard image={'logos/BALogo.png'} language={institution.uba}/>
+        <EdCard image={'logos/cotac-logo.png'} language={institution.cotac}/>
         <EdCard image={'logos/logo_academlo2.png'} language={institution.academlo}/>
+        <EdCard image={'logos/BALogo.png'} language={institution.uba}/>
       </div>
 
       <h3 className='certificate_main_title'>Certificates</h3>
