@@ -81,7 +81,7 @@ const ProjectCard = ({project , language , theme, iconColor}) => {
           </div>
 
           <div className='spec_container'>
-            <h4>{language === english? 'Compatibility: ' : 'Compatibilidad: '}</h4>
+            <h4>{language === english? 'Platforms: ' : 'Plataformas: '}</h4>
             <ul>
               {project.compatibility.map((element, index) => 
                 <li key={index}>{element}</li>

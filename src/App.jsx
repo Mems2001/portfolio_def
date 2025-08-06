@@ -125,17 +125,24 @@ useEffect(
   } , [showBar]
 )
 
-// LIGHT/DARK THEMES
-const [theme, setTheme] = useState('Light')
-const [iconColor, setIconColor] = useState('#457b9d')
+// LIGHT & DARK THEMES
+let savedTheme = localStorage.getItem('mems-cv-theme') ?? 'Light'
+const [theme, setTheme] = useState(savedTheme)
+const [iconColor, setIconColor] = useState(savedTheme)
 
-const toggleTheme = () => {
-  if (theme === 'Dark') {
-    setTheme('Light')
-    setIconColor('#457b9d')
-  } else {
-    setTheme('Dark')
-    setIconColor('#ea9595')
+function toggleTheme () {
+  // console.log('current theme:', theme)
+  switch (theme) {
+    case 'Dark':
+      localStorage.setItem('mems-cv-theme', 'Light')
+      setTheme('Light')
+      setIconColor('#457b9d')
+      break
+    case 'Light':
+      localStorage.setItem('mems-cv-theme', 'Dark')
+      setTheme('Dark')
+      setIconColor('#ea9595')
+      break
   }
 }
 
@@ -144,13 +151,22 @@ useEffect(
   () => {
     const themeBtn = document.querySelector('.theme_btn')
     const theme_img = document.querySelector('.theme_img')
+
+    switch (savedTheme) {
+      case 'Light':
+        document.body.classList.add('light_theme')
+        theme_img.classList.add('light')
+        break
+      case 'Dark':
+        document.body.classList.remove('light_theme')
+        theme_img.classList.remove('light')
+        break
+    }
     
-    const themeToggling = () => {
-    
+    function themeToggling () {
         document.body.classList.toggle('light_theme')
         theme_img.classList.toggle('light')
-        toggleTheme()
-      
+        toggleTheme()  
     }
 
     themeBtn.addEventListener('click' , themeToggling)
