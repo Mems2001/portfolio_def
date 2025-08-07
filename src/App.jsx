@@ -17,12 +17,18 @@ function App() {
   let savedLanguage = localStorage.getItem('mems-cv-language')
   const [language, setLanguage] = useState(savedLanguage === 'english'? english: spanish)
 
-  const changeLangEsp = () => {
+  /**
+   * Sets both localStorage for token for language persistance and useState for app reactivity
+   */
+  function changeLangEsp () {
     localStorage.setItem('mems-cv-language', 'español')
     setLanguage(spanish)
   }
-
-  const changeLangEng = () => {
+  
+  /**
+   * Sets both localStorage token for for language persistance and useState for app reactivity
+   */
+  function changeLangEng () {
     localStorage.setItem('mems-cv-language', 'english')
     setLanguage(english)
   }
@@ -34,14 +40,16 @@ function App() {
       const hiddenProjectCards = document.querySelectorAll('.hidden_2') //For elements contained in section containers
       const linkedElements = document.querySelectorAll('.link') //For menu items higlighting if the corresponding section is being currently displayed
 
-      //Animates the menu items higlighting and section container slides to screen
+      //Animates the menu items higlighting and section containers slides to screen
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.id 
 
           if (entry.isIntersecting) {
+            //For section containers
             entry.target.classList.add('show')
 
+            //For menu items
             linkedElements.forEach(linked => {
               const href = linked.getAttribute('href').split('#')[1]
 
@@ -111,7 +119,7 @@ useEffect(
     const navBtn = document.querySelector('.navBar_btn_mobile')
     const links = document.querySelectorAll('.mob_link')
 
-    const toggleMenu = () => {
+    function toggleMenu () {
       if (showBar) {
         setShowBar(false)
         navBar.classList.remove("show_nav")
@@ -138,6 +146,9 @@ let savedTheme = localStorage.getItem('mems-cv-theme') ?? 'Light'
 const [theme, setTheme] = useState(savedTheme)
 const [iconColor, setIconColor] = useState(savedTheme)
 
+/**
+ * When toggling themes the function sets both useState for app reactivity and localStorage token for theme persistance
+ */
 function toggleTheme () {
   // console.log('current theme:', theme)
   switch (theme) {
@@ -160,6 +171,7 @@ useEffect(
     const themeBtn = document.querySelector('.theme_btn')
     const theme_img = document.querySelector('.theme_img')
 
+    //Since the dark theme is the default app index.css set of color varibles we need to check for a localStorage token to updated if needed. 
     switch (savedTheme) {
       case 'Light':
         document.body.classList.add('light_theme')
@@ -171,6 +183,9 @@ useEffect(
         break
     }
     
+    /**
+     * Since the dark mode is the default index.css color varibles configuration then light theme enters as an added classs to the document's body. Therefore, changing between themes reducts to add or remove the light theme class
+     */
     function themeToggling () {
         document.body.classList.toggle('light_theme')
         theme_img.classList.toggle('light')

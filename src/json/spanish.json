@@ -150,9 +150,9 @@
             "content" : {
                 "projects": [
                 {
-                    "description": "Esta página misma! Proyecto Front-end desarrollado con react con animaciones css, css condicional para características como cambio de temas e idiomas, diseño responsivo, arquitectura de react con componentes, y más!",
+                    "description": "Esta página misma! Proyecto Front-end desarrollado con react con animaciones css, css condicional para características como cambio de temas e idiomas, diseño responsivo, código limpio que aprovecha los componentes de React, y más!",
                     "name": "Mems CV",
-                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite"],
+                    "languages": ["hmtl" , "css" , "javaScript" , "React"],
                     "compatibility": ["desktop PC" , "laptop" , "mobile" , "tablet"],
                     "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
                     "links": {

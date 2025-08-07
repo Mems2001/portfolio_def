@@ -44,9 +44,13 @@
   display: flex;
 }
 
+.project_details p {
+  color: var(--lcolor-9)
+}
+
 .project_det_btn {
   background-color: inherit;
-  color: var(--lcolor-8);
+  color: var(--lcolor-9);
 
   position: relative;
   bottom: 3%;
@@ -144,12 +148,12 @@
   color: var(--color-5);
   font-weight: 800;
 
-  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   border: 0;
 
   position: absolute;
   top: 0;
-  right: 0%;
+  left: 0%;
 }
 
 .prev_btn {

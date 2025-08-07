@@ -150,9 +150,9 @@
         "content" : {
             "projects": [
                 {
-                    "description": "This CV page itself! Front-end project developed with react with css animations, conditional css features such as language and theme toggling, responsive desing, react components arquitecture, and more!",
+                    "description": "This CV page itself! Front-end project developed with react with css animations, conditional css features such as language and theme toggling, responsive desing, a clean code that make the most of React Components, and more!",
                     "name": "Mems CV",
-                    "languages": ["hmtl" , "css" , "javaScript" , "react-vite"],
+                    "languages": ["hmtl" , "css" , "javaScript" , "React"],
                     "compatibility": ["desktop PC" , "mobile" , "tablet"],
                     "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
                     "links": {
