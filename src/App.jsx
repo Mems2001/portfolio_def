@@ -12,24 +12,29 @@ import Contact from './components/Contact'
 import NavBarMobile from './components/NavBarMobile'
 
 function App() {
-  
-  const [language, setLanguage] = useState(english)
 
-  const changeLangEsp = () => {  
-     setLanguage(spanish)
+// ---> LANGUAGES HANDLING <---
+  let savedLanguage = localStorage.getItem('mems-cv-language')
+  const [language, setLanguage] = useState(savedLanguage === 'english'? english: spanish)
+
+  const changeLangEsp = () => {
+    localStorage.setItem('mems-cv-language', 'español')
+    setLanguage(spanish)
   }
 
   const changeLangEng = () => {
+    localStorage.setItem('mems-cv-language', 'english')
     setLanguage(english)
   }
 
-// ANIMATIONS
+// ---> ANIMATIONS <---
   useEffect(
     () => {
-      const hiddenElements = document.querySelectorAll('.hidden')
-      const hiddenProjectCards = document.querySelectorAll('.hidden_2')
-      const linkedElements = document.querySelectorAll('.link')
+      const hiddenElements = document.querySelectorAll('.hidden') //For elements like section containers
+      const hiddenProjectCards = document.querySelectorAll('.hidden_2') //For elements contained in section containers
+      const linkedElements = document.querySelectorAll('.link') //For menu items higlighting if the corresponding section is being currently displayed
 
+      //Animates the menu items higlighting and section container slides to screen
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           const id = entry.target.id 
@@ -54,6 +59,7 @@ function App() {
         threshold: 0.1
       })
 
+      //Animates section container elements slides to screen
       const observer1 = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           
@@ -76,10 +82,10 @@ function App() {
       const spn_btn_2 = document.querySelector('#spn_btn_2')
       const eng_btn_2 = document.querySelector('#eng_btn_2')
 
+      //Animantes language selection buttons on selection
       if (language === spanish) {
         spn_btn.classList.add('linked')
         spn_btn_2.classList.add('linked')
-        // console.log('español')
       } else {
         spn_btn.classList.remove('linked')
         spn_btn_2.classList.remove('linked')
@@ -88,7 +94,6 @@ function App() {
       if (language === english) {
         eng_btn.classList.add('linked')
         eng_btn_2.classList.add('linked')
-        // console.log('english')
       } else {
         eng_btn.classList.remove('linked')
         eng_btn_2.classList.remove('linked')
@@ -96,7 +101,7 @@ function App() {
     }
   )
 
-// NAVIGATOR MOBILE INTERACTIONS
+// ---> NAVIGATOR MOBILE INTERACTIONS <---
 const [showBar, setShowBar] = useState(false)
   
 useEffect(
@@ -128,7 +133,7 @@ useEffect(
   } , [showBar]
 )
 
-// LIGHT & DARK THEMES
+// ---> LIGHT & DARK THEMES <---
 let savedTheme = localStorage.getItem('mems-cv-theme') ?? 'Light'
 const [theme, setTheme] = useState(savedTheme)
 const [iconColor, setIconColor] = useState(savedTheme)
@@ -149,7 +154,7 @@ function toggleTheme () {
   }
 }
 
-// Themes toggling
+// ---> THEMES TOGGLING <---
 useEffect(
   () => {
     const themeBtn = document.querySelector('.theme_btn')
