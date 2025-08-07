@@ -1,9 +1,9 @@
-import React from 'react'
 import { useForm } from 'react-hook-form'
 
 import emailjs from '@emailjs/browser'
 
 import '../styles/Contact.css'
+import { useRef } from 'react'
 
 const Contact = ({language}) => {
 
@@ -16,9 +16,11 @@ const Contact = ({language}) => {
   //       .join("&");
   // }
 
+  const formRef = useRef(null)
+
   function submit (data) {
     if(data.email != '') {
-      console.log(data)
+      // console.log(data)
 
       const defaultForm = {
         name: '',
@@ -44,9 +46,9 @@ const Contact = ({language}) => {
       //   .catch(err => console.log(err))
 
       emailjs.sendForm(
-        'service_evb9l8s',
+        'service_lfylreh',
         'template_m3pc904',
-        data, 
+        formRef.current, 
         {
           publicKey: 'iSgjq1cFAJCi7K34B'
         }
@@ -65,7 +67,7 @@ const Contact = ({language}) => {
     <section className='hidden' id='contact'>
       <h2 className='section_title'>{language[5].title}</h2>
 
-      <form name='contact' className='form' onSubmit={handleSubmit(submit)}>
+      <form ref={formRef} name='contact' className='form' onSubmit={handleSubmit(submit)}>
         <label htmlFor='nameC'>{language[5].content.name.title}:</label>
         <input type='text' name='name' id='nameC' {...register('name')} placeholder={language[5].content.name.placeholder}/>
         <label htmlFor='emailC'>{language[5].content.email.title}:</label>

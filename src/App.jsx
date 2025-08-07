@@ -59,8 +59,11 @@ function App() {
           
           if (entry.isIntersecting) {
             entry.target.classList.add('show_2')
+            entry.target.classList.remove('hidden_2')
           } else {
             entry.target.classList.remove('show_2')
+            entry.target.classList.add('hidden_2')
+
           }
         })
       })

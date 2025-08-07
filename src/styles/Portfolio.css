@@ -7,6 +7,10 @@
   gap: 0.5rem;
 }
 
+/* .portfolio_container .single {
+  grid-template-columns: 1fr;
+} */
+
 .project_card {
   height: 240px;
   width: 400px;
@@ -98,8 +102,6 @@
   position: relative;
   justify-self: center;
 
-  grid-column-start: 1;
-  grid-column-end: 3;
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   grid-template-rows: repeat(2 , auto);
@@ -108,6 +110,11 @@
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.5s ease;
+}
+
+.extended_details.expand {
+   grid-column: 1 / span 2 ;
+   transition: all 0.5s ease;
 }
 
 .extended_images {

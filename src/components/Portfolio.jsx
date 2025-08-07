@@ -1,4 +1,4 @@
-import React from 'react'
+import {motion} from 'framer-motion'
 
 import '../styles/Portfolio.css'
 
@@ -12,11 +12,11 @@ const Portfolio = ({theme , language, iconColor}) => {
     <section className='hidden' id='portfolio'>
       <h2 className='section_title'>{language[4].title}</h2>
 
-      <div className='portfolio_container'>
+      <motion.div className='portfolio_container'>
         {p?.map(
-          element => <ProjectCard key={element.name} project={element} language={language} theme={theme} iconColor={iconColor}/>
+          (element) => <ProjectCard key={element.name} project={element} language={language} theme={theme} iconColor={iconColor}/>
         )}
-      </div>
+      </motion.div>
     </section>
   )
 }
