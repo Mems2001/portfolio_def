@@ -154,7 +154,7 @@
                     "name": "Mems CV",
                     "languages": ["hmtl" , "css" , "javaScript" , "React"],
                     "compatibility": ["desktop PC" , "mobile" , "tablet"],
-                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png"],
+                    "images": ["img/CV/CV-1.png" , "img/CV/CV-2.png" , "img/CV/CV-3.png" , "img/CV/CV-4.png" , "img/CV/CV-5.png" , "img/CV/CV-6.png", "img/CV/CV-7.png"],
                     "links": {
                         "gitHub": "https://github.com/Mems2001/portfolio_def",
                         "netlify": "https://memsportafolio.netlify.app/"
@@ -165,7 +165,7 @@
                     "name": "Sierra Hábitat",
                     "languages": ["flutterflow" , "firebase" , "google-cloud"],
                     "compatibility": ["desktop PC" , "laptop" , "mobile" , "tablet"],
-                    "images": ["img/sierra/sierra1.png" , "img/sierra/sierra2.png" , "img/sierra/sierra3.png" , "img/sierra/sierra4.png" , "img/sierra/sierra5.png"],
+                    "images": ["img/sierra/sierra1.png" , "img/sierra/sierra2.png" , "img/sierra/sierra3.png" , "img/sierra/sierra4.png" , "img/sierra/sierra5.png", "img/sierra/sierra6.png", "img/sierra/sierra7.png"],
                     "links": {
                         "netlify": "https://sierra-habitat.flutterflow.app/homePage"
                     }
@@ -175,7 +175,7 @@
                     "name": "Fox Roots 593",
                     "languages": ["Angular", "NodeJs", "postgreSQL", "express", "TypeScript"],
                     "compatibility": ["mobile"],
-                    "images": ["img/fox-roots/fox-roots-1.png","img/fox-roots/fox-roots-2.jpeg","img/fox-roots/fox-roots-3.jpeg","img/fox-roots/fox-roots-4.jpeg","img/fox-roots/fox-roots-5.jpeg","img/fox-roots/fox-roots-6.jpeg"],
+                    "images": ["img/fox-roots/fox-roots-1.png","img/fox-roots/fox-roots-2.jpeg","img/fox-roots/fox-roots-3.jpeg","img/fox-roots/fox-roots-4.jpeg","img/fox-roots/fox-roots-5.jpeg","img/fox-roots/fox-roots-6.jpeg", "img/fox-roots/fox-roots-7.jpeg"],
                     "links": {
                         "netlify": "https://foxroots593.netlify.app/",
                         "gitHub": "https://github.com/Mems2001/fox_roots_ec",
@@ -187,7 +187,7 @@
                     "name": "Sudoku 2.1",
                     "languages": ["hmtl" , "css" , "TypeScript" , "react-vite" , "node.js"],
                     "compatibility": ["desktop PC" , "laptop"],
-                    "images": ["img/sudoku2.1/sudoku2.1_1.png" , "img/sudoku2.1/sudoku2.1_2.png" , "img/sudoku2.1/sudoku2.1_3.png" , "img/sudoku2.1/sudoku2.1_4.png" , "img/sudoku2.1/sudoku2.1_5.png" ],
+                    "images": ["img/sudoku2.1/sudoku2.1_1.png" , "img/sudoku2.1/sudoku2.1_2.png" , "img/sudoku2.1/sudoku2.1_3.png" , "img/sudoku2.1/sudoku2.1_4.png" , "img/sudoku2.1/sudoku2.1_5.png", "img/sudoku2.1/sudoku2.1_6.png" ],
                     "links": {
                         "gitHub": "https://github.com/Mems2001/sudoku2.1_web_app",
                         "netlify": "https://sudoku21.netlify.app/",
